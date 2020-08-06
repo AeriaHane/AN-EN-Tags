@@ -87,6 +87,10 @@
           "occPer": "ALWAYS"
         },
         {
+          "stageId": "sub_06-2-2",
+          "occPer": "ALWAYS"
+        },
+        {
           "stageId": "sub_04-2-3",
           "occPer": "ALWAYS"
         },
@@ -286,6 +290,10 @@
           "occPer": "ALWAYS"
         },
         {
+          "stageId": "sub_06-1-1",
+          "occPer": "ALWAYS"
+        },
+        {
           "stageId": "sub_04-3-3",
           "occPer": "ALWAYS"
         },
@@ -304,7 +312,7 @@
     "2004": {
       "itemId": "2004",
       "name": "고급작전기록",
-      "description": "열악한 환경에서는 조금만 잘못된 행동을 해도 목숨을 잃기 쉽다. 만약 준비가 충분하다면 살아날 기회가 늘어날지도 모른다.\n모든 명장면을 한데 모은 에피소드가 추가되었다. HD판, HD 리마스터판, 파워업 키트판, 감독판, 호화판이 모두 동봉되어 있다…",
+      "description": "열악한 환경에서는 조금만 잘못된 행동을 해도 목숨을 잃기 쉽다. 만약 준비가 충분하다면 살아날 기회가 늘어날지도 모른다.\n다양한 버전이 추가된 총집편이다. 리마스터 버전, HD 리메이크 버전, 파워업 키트, 디렉터스 컷, 고티 버전……",
       "rarity": 4,
       "iconId": "sprite_exp_card_t4",
       "overrideBkg": null,
@@ -471,6 +479,10 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act6d5_03",
+          "occPer": "ALWAYS"
+        },
+        {
           "stageId": "main_01-07",
           "occPer": "ALWAYS"
         },
@@ -481,6 +493,10 @@
         {
           "stageId": "main_05-10",
           "occPer": "USUAL"
+        },
+        {
+          "stageId": "sub_06-1-2",
+          "occPer": "ALWAYS"
         },
         {
           "stageId": "sub_05-1-1",
@@ -519,6 +535,10 @@
         {
           "stageId": "main_05-01",
           "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_06-05",
+          "occPer": "USUAL"
         }
       ],
       "buildingProductList": [
@@ -598,7 +618,15 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act6d5_05",
+          "occPer": "ALMOST"
+        },
+        {
           "stageId": "main_01-12",
+          "occPer": "USUAL"
+        },
+        {
+          "stageId": "main_06-10",
           "occPer": "USUAL"
         },
         {
@@ -641,6 +669,10 @@
         },
         {
           "stageId": "main_05-10",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_06-14",
           "occPer": "OFTEN"
         }
       ],
@@ -692,15 +724,19 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act6d5_01",
+          "occPer": "ALWAYS"
+        },
+        {
           "stageId": "a001_01",
           "occPer": "ALWAYS"
         },
         {
-          "stageId": "sub_02-07",
+          "stageId": "main_00-11",
           "occPer": "ALWAYS"
         },
         {
-          "stageId": "main_00-11",
+          "stageId": "sub_02-07",
           "occPer": "ALWAYS"
         }
       ],
@@ -727,6 +763,14 @@
         {
           "stageId": "main_01-08",
           "occPer": "ALMOST"
+        },
+        {
+          "stageId": "main_06-05",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_06-08",
+          "occPer": "ALWAYS"
         },
         {
           "stageId": "sub_03-1-2",
@@ -773,6 +817,10 @@
         {
           "stageId": "main_05-03",
           "occPer": "USUAL"
+        },
+        {
+          "stageId": "main_06-04",
+          "occPer": "OFTEN"
         }
       ],
       "buildingProductList": [
@@ -798,6 +846,10 @@
       "stageDropList": [
         {
           "stageId": "main_03-08",
+          "occPer": "SOMETIMES"
+        },
+        {
+          "stageId": "main_06-04",
           "occPer": "SOMETIMES"
         }
       ],
@@ -856,6 +908,10 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act6d5_04",
+          "occPer": "ALWAYS"
+        },
+        {
           "stageId": "a001_03",
           "occPer": "USUAL"
         },
@@ -907,6 +963,10 @@
         },
         {
           "stageId": "main_05-02",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_06-03",
           "occPer": "OFTEN"
         }
       ],
@@ -962,12 +1022,16 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
-          "stageId": "main_01-03",
-          "occPer": "ALMOST"
+          "stageId": "act6d5_02",
+          "occPer": "ALWAYS"
         },
         {
           "stageId": "sub_02-08",
           "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "main_01-03",
+          "occPer": "ALMOST"
         }
       ],
       "buildingProductList": []
@@ -1003,6 +1067,10 @@
           "occPer": "USUAL"
         },
         {
+          "stageId": "main_06-01",
+          "occPer": "ALMOST"
+        },
+        {
           "stageId": "sub_03-2-1",
           "occPer": "ALWAYS"
         }
@@ -1034,6 +1102,10 @@
         },
         {
           "stageId": "main_05-05",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_06-09",
           "occPer": "OFTEN"
         },
         {
@@ -1132,6 +1204,14 @@
         {
           "stageId": "main_03-07",
           "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "main_06-14",
+          "occPer": "USUAL"
+        },
+        {
+          "stageId": "sub_06-2-1",
+          "occPer": "ALMOST"
         }
       ],
       "buildingProductList": [
@@ -1156,6 +1236,10 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act6d5_06",
+          "occPer": "OFTEN"
+        },
+        {
           "stageId": "main_03-01",
           "occPer": "OFTEN"
         },
@@ -1165,6 +1249,10 @@
         },
         {
           "stageId": "main_05-08",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_06-07",
           "occPer": "OFTEN"
         }
       ],
@@ -1220,6 +1308,10 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act6d5_07",
+          "occPer": "OFTEN"
+        },
+        {
           "stageId": "a001_05",
           "occPer": "USUAL"
         },
@@ -1234,6 +1326,10 @@
         {
           "stageId": "main_05-04",
           "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_06-10",
+          "occPer": "USUAL"
         }
       ],
       "buildingProductList": []
@@ -1289,6 +1385,10 @@
         {
           "stageId": "main_05-06",
           "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_06-02",
+          "occPer": "OFTEN"
         }
       ],
       "buildingProductList": []
@@ -1309,6 +1409,10 @@
       "stageDropList": [
         {
           "stageId": "main_04-07",
+          "occPer": "SOMETIMES"
+        },
+        {
+          "stageId": "main_06-02",
           "occPer": "SOMETIMES"
         }
       ],
@@ -1334,6 +1438,10 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act6d5_08",
+          "occPer": "OFTEN"
+        },
+        {
           "stageId": "a001_06",
           "occPer": "OFTEN"
         },
@@ -1347,6 +1455,10 @@
         },
         {
           "stageId": "main_05-07",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_06-12",
           "occPer": "OFTEN"
         }
       ],
@@ -1403,6 +1515,10 @@
         {
           "stageId": "main_05-09",
           "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_06-13",
+          "occPer": "OFTEN"
         }
       ],
       "buildingProductList": []
@@ -1423,6 +1539,10 @@
       "stageDropList": [
         {
           "stageId": "main_04-09",
+          "occPer": "SOMETIMES"
+        },
+        {
+          "stageId": "main_06-13",
           "occPer": "SOMETIMES"
         }
       ],
@@ -1493,6 +1613,116 @@
         {
           "roomType": "WORKSHOP",
           "formulaId": "12"
+        }
+      ]
+    },
+    "31013": {
+      "itemId": "31013",
+      "name": "젤",
+      "description": "실험실에서 우연히 탄생한 인공 재료. 고온과 저온 환경에 뛰어난 내성을 지니고 있으며, 높은 강도와 가벼운 중량으로 가공이 용이해 하이테크놀러지에 광범위하게 사용된다.",
+      "rarity": 2,
+      "iconId": "MTL_SL_PGEL3",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 100037,
+      "usage": "고강도 가소성 재료. 다양한 강화 용도로 쓰이며, 주로 제조소에서 합성 원료로 쓰인다.",
+      "obtainApproach": null,
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [
+        {
+          "stageId": "sub_04-4-1",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "sub_05-4-1",
+          "occPer": "OFTEN"
+        }
+      ],
+      "buildingProductList": []
+    },
+    "31014": {
+      "itemId": "31014",
+      "name": "중합젤",
+      "description": "젤을 원재료로 수많은 실험과 테스트를 반복하여 탄생한 인공 재료. 고압력 환경에서도 안정적으로 성질을 유지하여, 일부 하이테크놀러지에서도 매우 중요한 위치를 차지한다.",
+      "rarity": 3,
+      "iconId": "MTL_SL_PGEL4",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 100036,
+      "usage": "초고강도 가소성 재료. 다양한 강화 용도로 쓰인다.",
+      "obtainApproach": null,
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [
+        {
+          "stageId": "sub_05-4-1",
+          "occPer": "SOMETIMES"
+        }
+      ],
+      "buildingProductList": [
+        {
+          "roomType": "WORKSHOP",
+          "formulaId": "56"
+        }
+      ]
+    },
+    "31023": {
+      "itemId": "31023",
+      "name": "열합금",
+      "description": "테라의 희귀 금속들을 몇 종류 제련하여 만든 합금 재료. 일부 전자부품과 회로 기판 제조에 사용되며, 첨단 전자 공업에선 필수불가결한 재료다.",
+      "rarity": 2,
+      "iconId": "MTL_SL_IAM3",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 100039,
+      "usage": "전자공업용 특수 고융점 합금. 다양한 강화 용도로 쓰이며, 주로 제조소에서 합성 원료로 쓰인다.",
+      "obtainApproach": null,
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [
+        {
+          "stageId": "main_06-11",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "sub_03-3-1",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "sub_05-4-2",
+          "occPer": "OFTEN"
+        }
+      ],
+      "buildingProductList": []
+    },
+    "31024": {
+      "itemId": "31024",
+      "name": "열합금 팩",
+      "description": "열합금을 더욱 가공하여 얻어낸 합금 재료. 복잡한 공정 처리를 통해 일정 온도 아래에서 고체와 액체가 혼합된 상태를 안정적으로 유지하며, 첨단 전자 공업의 제품 개발 방면에 있어 대체 불가능한 입지를 다졌다.",
+      "rarity": 3,
+      "iconId": "MTL_SL_IAM4",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 100038,
+      "usage": "생산량이 매우 적은 전자공업용 특수 고융점 합금. 다양한 강화 용도로 쓰인다.",
+      "obtainApproach": null,
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [
+        {
+          "stageId": "main_06-11",
+          "occPer": "SOMETIMES"
+        },
+        {
+          "stageId": "sub_05-4-2",
+          "occPer": "SOMETIMES"
+        }
+      ],
+      "buildingProductList": [
+        {
+          "roomType": "WORKSHOP",
+          "formulaId": "55"
         }
       ]
     },
@@ -2275,7 +2505,7 @@
     "3273": {
       "itemId": "3273",
       "name": "서포터 듀얼 칩",
-      "description": "특별 훈련의 성과로 획득한 재료. 경험이 부족한 서포터 오퍼레이터에게 도움이 될 것으로 보인다.",
+      "description": "특별 훈련의 성과로 획득한 재료. 경험이 풍부한 서포터 오퍼레이터에게 도움이 될 것으로 보인다.",
       "rarity": 4,
       "iconId": "MTL_ASC_SUP3",
       "overrideBkg": null,
@@ -3537,7 +3767,7 @@
       "overrideBkg": null,
       "stackIconId": null,
       "sortId": 900017,
-      "usage": "파프카의 잠재능력 상승에 사용된다.",
+      "usage": "포푸카의 잠재능력 상승에 사용된다.",
       "obtainApproach": "캐릭터 입사 시 획득",
       "classifyType": "MATERIAL",
       "itemType": "MATERIAL",
@@ -3976,16 +4206,96 @@
       "stageDropList": [],
       "buildingProductList": []
     },
+    "p_char_298_susuro": {
+      "itemId": "p_char_298_susuro",
+      "name": "수수로의 증표",
+      "description": "부드러운 종이로 만들어진 일기장. 과거의 기억이든 미래의 기억이든, 기록만 되어 있다면 영원히 사라지지 않겠지?",
+      "rarity": 3,
+      "iconId": "p_char_298_susuro",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 800028,
+      "usage": "수수로의 잠재능력 상승에 사용된다.",
+      "obtainApproach": "캐릭터 입사 시 획득",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_260_durnar": {
+      "itemId": "p_char_260_durnar",
+      "name": "듀나의 증표",
+      "description": "더 이상 쓰지 않는 전동 칼날. 버릴 줄을 알아야 그 소중함을 알 수 있는 법.",
+      "rarity": 3,
+      "iconId": "p_char_260_durnar",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 800029,
+      "usage": "듀나의 잠재능력 상승에 사용된다.",
+      "obtainApproach": "캐릭터 입사 시 획득",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_355_ethan": {
+      "itemId": "p_char_355_ethan",
+      "name": "에단의 증표",
+      "description": "금속재질의 요요. 기술을 뽐낼 때는 주위의 관중을 맞추지 않도록 조심하자.",
+      "rarity": 3,
+      "iconId": "p_char_355_ethan",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 800030,
+      "usage": "에단의 잠재능력 상승에 사용된다.",
+      "obtainApproach": "캐릭터 입사 시 획득",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
     "p_char_190_clour": {
       "itemId": "p_char_190_clour",
       "name": "버메일의 증표",
-      "description": "야수의 새하얀 이빨을 이어 만든 장식품. 이 중 하나는 그녀의 왼팔을 앗아간 야수에게서 얻은 것 이빨이다.",
+      "description": "야수의 새하얀 이빨을 이어 만든 장식품.이 중 하나는 그녀의 왼팔을 앗아간 야수에게서 얻은 것이다.",
       "rarity": 3,
       "iconId": "p_char_190_clour",
       "overrideBkg": null,
       "stackIconId": null,
       "sortId": 800031,
       "usage": "버메일의 잠재능력 상승에 사용된다.",
+      "obtainApproach": "캐릭터 입사 시 획득",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_133_mm": {
+      "itemId": "p_char_133_mm",
+      "name": "메이의 증표",
+      "description": "어디서 구했는지 모를 테이저건. 메이가 애용하는 무기와 잘 어울린다.",
+      "rarity": 3,
+      "iconId": "p_char_133_mm",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 800032,
+      "usage": "메이의 잠재능력 상승에 사용된다.",
+      "obtainApproach": "캐릭터 입사 시 획득",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_302_glaze": {
+      "itemId": "p_char_302_glaze",
+      "name": "엠브리엘의 증표",
+      "description": "정교하게 만들어진 화장거울. 휴대하기도 몹시 간편하여 전투 중에도 언제든지 머리가 흐트러지진 않았는지 체크할 수 있다.",
+      "rarity": 3,
+      "iconId": "p_char_302_glaze",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 800033,
+      "usage": "엠브리엘의 잠재능력 상승에 사용된다.",
       "obtainApproach": "캐릭터 입사 시 획득",
       "classifyType": "MATERIAL",
       "itemType": "MATERIAL",
@@ -4504,6 +4814,54 @@
       "stageDropList": [],
       "buildingProductList": []
     },
+    "p_char_348_ceylon": {
+      "itemId": "p_char_348_ceylon",
+      "name": "실론의 증표",
+      "description": "더 이상 글 쓸 자리가 없는 노트. 현재까지 정리된 오리지늄 연구에 관한 모든 지식이 들어있다. 이 정도로 상세하다면 책으로 내도 무방할 것 같다. 제목은 <오리지늄 연구, 입문부터 마스터까지>로 하면 되려나.",
+      "rarity": 4,
+      "iconId": "p_char_348_ceylon",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700033,
+      "usage": "실론의 잠재능력 상승에 사용된다.",
+      "obtainApproach": "캐릭터 입사 시 획득",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_326_glacus": {
+      "itemId": "p_char_326_glacus",
+      "name": "글라우쿠스의 증표",
+      "description": "전기가 다 빠진 전지다. 쓸모없는 물건의 마지막 용도는 '소장'이니까.",
+      "rarity": 4,
+      "iconId": "p_char_326_glacus",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700034,
+      "usage": "글라우쿠스의 잠재능력 상승에 사용된다.",
+      "obtainApproach": "캐릭터 입사 시 획득",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_275_breeze": {
+      "itemId": "p_char_275_breeze",
+      "name": "브리즈의 증표",
+      "description": "도안이 잘 보이지 않을 정도로 여러 번 닦여진 가문의 휘장. 지금도 새것처럼 빛나고 있다.",
+      "rarity": 4,
+      "iconId": "p_char_275_breeze",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700035,
+      "usage": "브리즈의 잠재능력 상승에 사용된다.",
+      "obtainApproach": "캐릭터 입사 시 획득",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
     "p_char_131_flameb": {
       "itemId": "p_char_131_flameb",
       "name": "플레임브링어의 증표",
@@ -4530,6 +4888,118 @@
       "stackIconId": null,
       "sortId": 700037,
       "usage": "이그제큐터의 잠재능력 상승에 사용된다.",
+      "obtainApproach": "캐릭터 입사 시 획득",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_261_sddrag": {
+      "itemId": "p_char_261_sddrag",
+      "name": "리드의 증표",
+      "description": "일기장에 적은 짧은 시. 디테일하고 아름다운 표현이 가슴에 사무친다.",
+      "rarity": 4,
+      "iconId": "p_char_261_sddrag",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700038,
+      "usage": "리드의 잠재능력 상승에 사용된다.",
+      "obtainApproach": "캐릭터 입사 시 획득",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_356_broca": {
+      "itemId": "p_char_356_broca",
+      "name": "브로카의 증표",
+      "description": "시라쿠사 어느 도시의 미니어쳐. 몰래 당신의 사무실에 놔두는 바람에, 그 다음날 출근해서 발견하게 되었다.",
+      "rarity": 4,
+      "iconId": "p_char_356_broca",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700039,
+      "usage": "브로카의 잠재능력 상승에 사용된다.",
+      "obtainApproach": "캐릭터 입사 시 획득",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_243_waaifu": {
+      "itemId": "p_char_243_waaifu",
+      "name": "와이후의 증표",
+      "description": "괴상한 글씨체로 쓰여진 비전의 권법서. 연구자료로는 참고할 만한 가치가… 있을지도?",
+      "rarity": 4,
+      "iconId": "p_char_243_waaifu",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700040,
+      "usage": "와이후의 잠재능력 상승에 사용된다.",
+      "obtainApproach": "캐릭터 입사 시 획득",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_325_bison": {
+      "itemId": "p_char_325_bison",
+      "name": "바이슨의 증표",
+      "description": "오래된 지도. 방방곡곡을 돌아다닌 흔적이 또렷이 남아있다. 새로운 계획과 낡은 메모가 공존하는, 이게 바로 전달자의 삶이다.",
+      "rarity": 4,
+      "iconId": "p_char_325_bison",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700041,
+      "usage": "바이슨의 잠재능력 상승에 사용된다.",
+      "obtainApproach": "캐릭터 입사 시 획득",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_367_swllow": {
+      "itemId": "p_char_367_swllow",
+      "name": "그레이스롯의 증표",
+      "description": "부러진 수술용 칼. 아버지의 유품이다. 감염자를 돕고자 손을 내밀었던 의사가 겪었을 고통은, 아마 상상하기 어려울 것이다.",
+      "rarity": 4,
+      "iconId": "p_char_367_swllow",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700042,
+      "usage": "그레이스롯의 잠재능력 상승에 사용된다.",
+      "obtainApproach": "캐릭터 입사 시 획득",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_226_hmau": {
+      "itemId": "p_char_226_hmau",
+      "name": "훔의 증표",
+      "description": "훔이 직접 정리하고 쓴 계절별 집밥 추천 레시피. 레시피에 적힌 요리들은 전부 맛있을 뿐만 아니라 만들기도 매우 쉽다.",
+      "rarity": 4,
+      "iconId": "p_char_226_hmau",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700043,
+      "usage": "훔의 잠재능력 상승에 사용된다.",
+      "obtainApproach": "캐릭터 입사 시 획득",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_383_snsant": {
+      "itemId": "p_char_383_snsant",
+      "name": "스노우상트의 증표",
+      "description": "직접 꿰매 만든 용돈 주머니. 안에는 이미 유통이 정지된 동전들이 몇 개 들어있다.",
+      "rarity": 4,
+      "iconId": "p_char_383_snsant",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700044,
+      "usage": "스노우상트의 잠재능력 상승에 사용된다.",
       "obtainApproach": "캐릭터 입사 시 획득",
       "classifyType": "MATERIAL",
       "itemType": "MATERIAL",
@@ -4728,6 +5198,22 @@
       "stageDropList": [],
       "buildingProductList": []
     },
+    "p_char_340_shwaz": {
+      "itemId": "p_char_340_shwaz",
+      "name": "슈바르츠의 증표",
+      "description": "석궁. 정비도 잘 되어있고 쓰기도 편하다. 무기에 난 수도 없이 많은 흠집과 구멍을 보면, 어떤 싸움을 겪어왔는지 짐작해볼 수 있다.",
+      "rarity": 5,
+      "iconId": "p_char_340_shwaz",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 600013,
+      "usage": "슈바르츠의 잠재능력 상승에 사용된다.",
+      "obtainApproach": "캐릭터 입사 시 획득",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
     "p_char_188_helage": {
       "itemId": "p_char_188_helage",
       "name": "헬라그의 증표",
@@ -4754,6 +5240,70 @@
       "stackIconId": null,
       "sortId": 600015,
       "usage": "마젤란의 잠재능력 상승에 사용된다.",
+      "obtainApproach": "캐릭터 입사 시 획득",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_213_mostma": {
+      "itemId": "p_char_213_mostma",
+      "name": "모스티마의 증표",
+      "description": "더 이상 필요로 하지 않는 그녀의 총이다.",
+      "rarity": 5,
+      "iconId": "p_char_213_mostma",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 600016,
+      "usage": "모스티마의 잠재능력 상승에 사용된다.",
+      "obtainApproach": "캐릭터 입사 시 획득",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_225_haak": {
+      "itemId": "p_char_225_haak",
+      "name": "아의 증표",
+      "description": "병 하나에 색깔이 각기 다른 여섯 개의 알약이 들어있다. 설명서는 받지 못했다.",
+      "rarity": 5,
+      "iconId": "p_char_225_haak",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 600017,
+      "usage": "아의 잠재능력 상승에 사용된다.",
+      "obtainApproach": "캐릭터 입사 시 획득",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_2014_nian": {
+      "itemId": "p_char_2014_nian",
+      "name": "니엔의 증표",
+      "description": "소박한 디자인의 비수. 암살 같은 일에만 사용되고, 비수의 칼날은 사라진다고 한다.",
+      "rarity": 5,
+      "iconId": "p_char_2014_nian",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 600018,
+      "usage": "니엔의 잠재능력 상승에 사용된다.",
+      "obtainApproach": "캐릭터 입사 시 획득",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_017_huang": {
+      "itemId": "p_char_017_huang",
+      "name": "블레이즈의 증표",
+      "description": "내부 구조가 잘 보이지 않는 유리병. 두 세번 정도 흔들면 병이 따뜻해져 추운 겨울에 쥐고 있기 딱 좋다.",
+      "rarity": 5,
+      "iconId": "p_char_017_huang",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 600019,
+      "usage": "블레이즈의 잠재능력 상승에 사용된다.",
       "obtainApproach": "캐릭터 입사 시 획득",
       "classifyType": "MATERIAL",
       "itemType": "MATERIAL",
@@ -5009,6 +5559,22 @@
       ],
       "buildingProductList": []
     },
+    "ap_supply_lt_010": {
+      "itemId": "ap_supply_lt_010",
+      "name": "응급 이성 샘플",
+      "description": "샘플이라 양이 적으니, 합리적으로 사용하여 주십시오. 사용해보시고 만족스러우시다면, 다른 패키지도 준비되어 있으니 많은 관심 부탁드립니다.",
+      "rarity": 4,
+      "iconId": "ap_supply_lt_10",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 50004,
+      "usage": "일시적으로 이성을 유지시켜주는 응급 이성 회복제. 휴대하기 간편한 샘플용으로 나왔다.",
+      "obtainApproach": "이벤트 스테이지 드랍",
+      "classifyType": "CONSUME",
+      "itemType": "AP_SUPPLY",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
     "ap_supply_lt_60": {
       "itemId": "ap_supply_lt_60",
       "name": "응급 이성 회복제",
@@ -5017,7 +5583,7 @@
       "iconId": "ap_supply_lt_60",
       "overrideBkg": null,
       "stackIconId": null,
-      "sortId": 30003,
+      "sortId": 50003,
       "usage": "일시적으로 이성을 회복시켜주는 응급약. 정신을 맑게 해준다.",
       "obtainApproach": "먼슬리 카드, 증정",
       "classifyType": "CONSUME",
@@ -5033,7 +5599,7 @@
       "iconId": "ap_supply_lt_100",
       "overrideBkg": null,
       "stackIconId": null,
-      "sortId": 30002,
+      "sortId": 50002,
       "usage": "일시적으로 이성을 회복시켜주는 대량의 응급약. 머릿속에 남아있는 불순물을 전부 없애주지만, 편두통을 유발할 수 있다.",
       "obtainApproach": "주간 임무 보상, 증정",
       "classifyType": "CONSUME",
@@ -5052,6 +5618,361 @@
       "sortId": -10000,
       "usage": "옵시디언 페스티벌 주최 측에서 사업부를 고용하여 회수 및 재활용을 진행한 입장 식별용 팔찌. 보수 교환에 사용된다. ",
       "obtainApproach": "한정 이벤트 미션, 일상 이벤트",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "et_ObsidianPass": {
+      "itemId": "et_ObsidianPass",
+      "name": "옵시디언 페스티벌 티켓",
+      "description": "이번 페스티벌의 각 스테이지에는 특별히 티켓 제도를 도입했습니다. 즉, 티켓이 있어야만 여러 이벤트에 참여할 수 있다는 뜻이죠. 많은 이용 바랍니다.",
+      "rarity": 4,
+      "iconId": "et_ObsidianPass",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "옵시디언 페스티벌 주최 측에서 판매한 티켓. 각종 특수 스테이지에 진입할 때 사용된다.",
+      "obtainApproach": null,
+      "classifyType": "NONE",
+      "itemType": "ET_STAGE",
+      "stageDropList": [
+        {
+          "stageId": "a003_01",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_02",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_03",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_05",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_06",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_08",
+          "occPer": "ALWAYS"
+        }
+      ],
+      "buildingProductList": []
+    },
+    "token_Obsidian": {
+      "itemId": "token_Obsidian",
+      "name": "시에스타의 흑요석",
+      "description": "무슨 소용이 있을진 모르겠지만, 모아두는 게 맞을 거야. 무슨 가치가 있을진 사업부에서 알아서 판단해주겠지.",
+      "rarity": 3,
+      "iconId": "token_Obsidian",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "시에스타 현지에서 대량 생산된 흑요석 결정. 보수 교환에 사용된다.",
+      "obtainApproach": null,
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [
+        {
+          "stageId": "a003_01",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_02",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_03",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_04",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_06",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_07",
+          "occPer": "ALWAYS"
+        }
+      ],
+      "buildingProductList": []
+    },
+    "token_ObsidianCoin": {
+      "itemId": "token_ObsidianCoin",
+      "name": "옵시디언 페스티벌 추첨 코인",
+      "description": "옵시디언 페스티벌의 열기는 상상 이상이었다. 여러 차례 상품을 보충해도 참여자들의 열기를 누를 수는 없었다. 하지만 지금 이벤트를 중지한다면 소란이 일어나기 뻔하기에, 주최 측에서는 울며 겨자 먹기로 추첨 이벤트를 계속 진행하고 있다.",
+      "rarity": 3,
+      "iconId": "token_ObsidianCoin",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "옵시디언 페스티벌 주최 측에서 추첨 이벤트를 위해 제작한 코인. 보상 추첨에 사용된다.",
+      "obtainApproach": null,
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [
+        {
+          "stageId": "a003_f01",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_f02",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_f03",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_f04",
+          "occPer": "ALWAYS"
+        }
+      ],
+      "buildingProductList": []
+    },
+    "clue_Heavymetal_1": {
+      "itemId": "clue_Heavymetal_1",
+      "name": "헤비메탈 타임라인 1",
+      "description": "옵시디언 페스티벌에 출연한 헤비메탈 밴드에 대해서만 얘기한 부분.",
+      "rarity": 3,
+      "iconId": "clue_Heavymetal_1",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "바캉스 중 오고 간 채팅 메시지.",
+      "obtainApproach": " 'Alive Until Sunset' 머신에서 추첨 획득",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_Heavymetal_2": {
+      "itemId": "clue_Heavymetal_2",
+      "name": "헤비메탈 타임라인 2",
+      "description": "비싼 기타는 안 부신다던데.",
+      "rarity": 3,
+      "iconId": "clue_Heavymetal_2",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "바캉스 중 오고 간 채팅 메시지.",
+      "obtainApproach": " 'Alive Until Sunset' 머신에서 추첨 획득",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_Heavymetal_3": {
+      "itemId": "clue_Heavymetal_3",
+      "name": "헤비메탈 타임라인 3",
+      "description": "사실 대부분의 사람들은 축제의 열기에 맞춰 모여있을 뿐이지만, 템포가 빨라지면 그들도 당황하기 시작할 것이다.",
+      "rarity": 3,
+      "iconId": "clue_Heavymetal_3",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "바캉스 중 오고 간 채팅 메시지.",
+      "obtainApproach": " 'Alive Until Sunset' 머신에서 추첨 획득",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_Heavymetal_4": {
+      "itemId": "clue_Heavymetal_4",
+      "name": "헤비메탈 타임라인 4",
+      "description": "질투는 사실 흔한 모티브지. 단어도 짧고.",
+      "rarity": 3,
+      "iconId": "clue_Heavymetal_4",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "바캉스 중 오고 간 채팅 메시지.",
+      "obtainApproach": " 'Alive Until Sunset' 머신에서 추첨 획득",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_Heavymetal_5": {
+      "itemId": "clue_Heavymetal_5",
+      "name": "헤비메탈 타임라인 5",
+      "description": "분장과 리듬은 꽤나 격렬한데, 그렇게 막 쩔진 않네.",
+      "rarity": 3,
+      "iconId": "clue_Heavymetal_5",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "바캉스 중 오고 간 채팅 메시지.",
+      "obtainApproach": " 'Alive Until Sunset' 머신에서 추첨 획득",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_EDM_1": {
+      "itemId": "clue_EDM_1",
+      "name": "EDM 타임라인 1",
+      "description": "EDM빠 쪽 언론인 것 같은데.",
+      "rarity": 3,
+      "iconId": "clue_EDM_1",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "바캉스 중 오고 간 채팅 메시지.",
+      "obtainApproach": " 'DDD' 머신에서 추첨 획득",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_EDM_2": {
+      "itemId": "clue_EDM_2",
+      "name": "EDM 타임라인 2",
+      "description": "댄스 플로어에 계신 분들은 수분보충에 유의하여 주십시오.",
+      "rarity": 3,
+      "iconId": "clue_EDM_2",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "바캉스 중 오고 간 채팅 메시지.",
+      "obtainApproach": " 'DDD' 머신에서 추첨 획득",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_EDM_3": {
+      "itemId": "clue_EDM_3",
+      "name": "EDM 타임라인 3",
+      "description": "EDM빠들은 그냥 종이 다른 생물이라 보면 돼.",
+      "rarity": 3,
+      "iconId": "clue_EDM_3",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "바캉스 중 오고 간 채팅 메시지.",
+      "obtainApproach": " 'DDD' 머신에서 추첨 획득",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_EDM_4": {
+      "itemId": "clue_EDM_4",
+      "name": "EDM 타임라인 4",
+      "description": "DJ는 지금 곡 리스트에 만족을 못할 때가 되어서야 작곡을 시작하는 법이지.",
+      "rarity": 3,
+      "iconId": "clue_EDM_4",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "바캉스 중 오고 간 채팅 메시지.",
+      "obtainApproach": " 'DDD' 머신에서 추첨 획득",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_EDM_5": {
+      "itemId": "clue_EDM_5",
+      "name": "EDM 타임라인 5",
+      "description": "DJ가 여러 나라의 통행증을 입수할 방법이 없다 하더라도… 아니다, 그런 일이 있을 리 없지.",
+      "rarity": 3,
+      "iconId": "clue_EDM_5",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "바캉스 중 오고 간 채팅 메시지.",
+      "obtainApproach": " 'DDD' 머신에서 추첨 획득",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_Rap_1": {
+      "itemId": "clue_Rap_1",
+      "name": "힙합 타임라인 1",
+      "description": "에이 요, 와썹 브로. 라임 그따위로밖에 못 맞추냐?",
+      "rarity": 3,
+      "iconId": "clue_Rap_1",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "바캉스 중 오고 간 채팅 메시지.",
+      "obtainApproach": " '엠퍼러' 머신에서 추첨 획득",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_Rap_2": {
+      "itemId": "clue_Rap_2",
+      "name": "힙합 타임라인 2",
+      "description": "널 한 방에 보내버릴 수 있는 애들은 얕봐선 안 돼. 랩 좀 한다는 천사들이 겁나 위험한 게 다 그래서라고.",
+      "rarity": 3,
+      "iconId": "clue_Rap_2",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "바캉스 중 오고 간 채팅 메시지.",
+      "obtainApproach": " '엠퍼러' 머신에서 추첨 획득",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_Rap_3": {
+      "itemId": "clue_Rap_3",
+      "name": "힙합 타임라인 3",
+      "description": "말로 싸우는 게 현피 뜨는 것보단 나아. 시에스타는 범죄자들한텐 얄짤없거든.",
+      "rarity": 3,
+      "iconId": "clue_Rap_3",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "바캉스 중 오고 간 채팅 메시지.",
+      "obtainApproach": " '엠퍼러' 머신에서 추첨 획득",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_Rap_4": {
+      "itemId": "clue_Rap_4",
+      "name": "힙합 타임라인 4",
+      "description": "매년 옵페할 때 체포되서 영구출입금지 당하는 애들이 꽤 많다더라. 겁나 불쌍하네.",
+      "rarity": 3,
+      "iconId": "clue_Rap_4",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "바캉스 중 오고 간 채팅 메시지.",
+      "obtainApproach": " '엠퍼러' 머신에서 추첨 획득",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_Rap_5": {
+      "itemId": "clue_Rap_5",
+      "name": "힙합 타임라인 5",
+      "description": "컬럼비아에 래퍼가 몇 명이나 있는지 알아?",
+      "rarity": 3,
+      "iconId": "clue_Rap_5",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "바캉스 중 오고 간 채팅 메시지.",
+      "obtainApproach": " '엠퍼러' 머신에서 추첨 획득",
       "classifyType": "NONE",
       "itemType": "ACTIVITY_ITEM",
       "stageDropList": [],
@@ -5094,6 +6015,103 @@
       ],
       "buildingProductList": []
     },
+    "act5d0_point_medal": {
+      "itemId": "act5d0_point_medal",
+      "name": "궁극의 펭귄 훈장",
+      "description": "쓸데없이 럭셔리하게 순금으로 만들어졌다. 용문의 일류 금조각사가 직접 만들었다고 하며, 테라 상에 한정 수량밖에 존재하지 않는다. 누가봐도 머그잔인데 훈장이라 부르는 건 엠퍼러의 특급 칭찬이란 뜻으로써, 한 모금에 천금의 가치가 있다는 걸 의미한다. 그래도 괜히 여기다 커피를 끓이는 일은 없도록 하자.",
+      "rarity": 4,
+      "iconId": "act5d0_point_medal",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "엠퍼러가 직접 수여해주는 훈장. 많이 모으면 좋은 일이 생길지도 모른다. 아마도.",
+      "obtainApproach": "이벤트 평가 임무를 완료하여 획득",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "act5d1_point_conbounty": {
+      "itemId": "act5d1_point_conbounty",
+      "name": "협약 상금",
+      "description": "냉혹하지만 효과적인 상금 제도. 위기 협약 시스템이 정상적으로 운영되도록 해주는 유일한 보증이다.",
+      "rarity": 4,
+      "iconId": "act5d1_point_conbounty",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "위기 협약을 완료한 후 획득하는 보수. 보급품으로 교환할 수 있다.",
+      "obtainApproach": "위기 협약 보상",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "act5d1_point_opagrt": {
+      "itemId": "act5d1_point_opagrt",
+      "name": "작전 협의",
+      "description": "혼란의 소멸이 질서의 설립을 의미할 필요는 없다. \"하늘이 초래하는 재앙을 사람이 초래하는 재해로\"… 위기 협약은 적어도, 당신에게 해결 방식을 하나 제공해주었다.",
+      "rarity": 4,
+      "iconId": "act5d1_point_opagrt",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "협의의 상징. 더 많은 위기 협약 내용을 개방하는데 사용된다.",
+      "obtainApproach": "위기 협약 보상",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "act6d5_point_firecracker": {
+      "itemId": "act6d5_point_firecracker",
+      "name": "양자폭죽",
+      "description": "폭발을 통해 자신의 존재를 증명하는 전통 민속 도구. 만약 당신이 폭발음을 듣지 못했다면, 이것은 존재한 적이 없다는 뜻이다.",
+      "rarity": 4,
+      "iconId": "act6d5_point_firecracker",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "이벤트 기간 동안 수집 가능한 기묘한 아이템. 보상으로 교환할 수 있다.",
+      "obtainApproach": "이벤트 기간 동안 스테이지 한정 드랍",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [
+        {
+          "stageId": "act6d5_01",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act6d5_02",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act6d5_03",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act6d5_04",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act6d5_05",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act6d5_06",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act6d5_07",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act6d5_08",
+          "occPer": "ALWAYS"
+        }
+      ],
+      "buildingProductList": []
+    },
     "voucher_item_4pick1": {
       "itemId": "voucher_item_4pick1",
       "name": "오퍼레이터 교환권",
@@ -5102,11 +6120,155 @@
       "iconId": "voucher_item_4pick1",
       "overrideBkg": null,
       "stackIconId": null,
-      "sortId": 30001,
+      "sortId": 30004,
       "usage": "오퍼레이터 1명과 교환할 수 있다.",
       "obtainApproach": "선물",
       "classifyType": "CONSUME",
       "itemType": "VOUCHER_PICK",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "voucher_recruitR3_1": {
+      "itemId": "voucher_recruitR3_1",
+      "name": "공개 모집 3★ 교환권·I",
+      "description": "제1기 공개모집 한정 3★ 오퍼레이터 중 1명을 선택할 수 있다.",
+      "rarity": 2,
+      "iconId": "voucher_recruitR3_1",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 30003,
+      "usage": "오퍼레이터 1명과 교환할 수 있다.",
+      "obtainApproach": "상점",
+      "classifyType": "CONSUME",
+      "itemType": "VOUCHER_PICK",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "voucher_recruitR4_1": {
+      "itemId": "voucher_recruitR4_1",
+      "name": "공개 모집 4★ 교환권·I",
+      "description": "제1기 공개모집 한정 4★ 오퍼레이터 중 1명을 선택할 수 있다.",
+      "rarity": 3,
+      "iconId": "voucher_recruitR4_1",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 30002,
+      "usage": "오퍼레이터 1명과 교환할 수 있다.",
+      "obtainApproach": "상점",
+      "classifyType": "CONSUME",
+      "itemType": "VOUCHER_PICK",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "2020recruitment10_1": {
+      "itemId": "2020recruitment10_1",
+      "name": "특별 헤드헌팅 허가증 α",
+      "description": "다양한 전략적 평가 기준으로 인해, 로도스 아일랜드에서는 다수의 인재 채용과 동시에, 특수 인재 채용을 위한 집중적 헤드헌팅을 함께 진행하였다.",
+      "rarity": 4,
+      "iconId": "2020recruitment10_1",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 30001,
+      "usage": "로도스 아일랜드 인사팀이 특별 발행한 허가증. 헤드헌팅 회사에 약간의 특별한 요구를 할 수 있다. 1회 모집으로 10명을 채용할 수 있다.",
+      "obtainApproach": "상점",
+      "classifyType": "CONSUME",
+      "itemType": "VOUCHER_CGACHA",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "2020recruitment10_2": {
+      "itemId": "2020recruitment10_2",
+      "name": "특별 헤드헌팅 허가증 β",
+      "description": "다양한 전략적 평가 기준으로 인해, 로도스 아일랜드에서는 다수의 인재 채용과 동시에, 특수 인재 채용을 위한 집중적 헤드헌팅을 함께 진행하였다.",
+      "rarity": 4,
+      "iconId": "2020recruitment10_2",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 30001,
+      "usage": "로도스 아일랜드 인사팀이 특별 발행한 허가증. 헤드헌팅 회사에 약간의 특별한 요구를 할 수 있다. 1회 모집으로 10명을 채용할 수 있다.",
+      "obtainApproach": "상점",
+      "classifyType": "CONSUME",
+      "itemType": "VOUCHER_CGACHA",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "2020recruitment10_3": {
+      "itemId": "2020recruitment10_3",
+      "name": "특별 헤드헌팅 허가증 γ",
+      "description": "다양한 전략적 평가 기준으로 인해, 로도스 아일랜드에서는 다수의 인재 채용과 동시에, 특수 인재 채용을 위한 집중적 헤드헌팅을 함께 진행하였다.",
+      "rarity": 4,
+      "iconId": "2020recruitment10_3",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 30001,
+      "usage": "로도스 아일랜드 인사팀이 특별 발행한 허가증. 헤드헌팅 회사에 약간의 특별한 요구를 할 수 있다. 1회 모집으로 10명을 채용할 수 있다.",
+      "obtainApproach": "상점",
+      "classifyType": "CONSUME",
+      "itemType": "VOUCHER_CGACHA",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "randomMaterial_1": {
+      "itemId": "randomMaterial_1",
+      "name": "로도스 아일랜드 보급 물자",
+      "description": "로도스 아일랜드가 방방곡곡에서 조달하여 준비한 보급 상자. 하지만 시스템적으로 정리 수납이 잘 되지 않아, 상자에는 각기 다른 자재가 들어가 있다.",
+      "rarity": 4,
+      "iconId": "randomMaterial_1",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 30005,
+      "usage": "각종 보급 물자가 들어있다. 다양한 재료를 랜덤으로 획득할 수 있다.",
+      "obtainApproach": "이벤트 기간 동안 스테이지 한정 드랍, 이벤트 획득",
+      "classifyType": "CONSUME",
+      "itemType": "VOUCHER_MGACHA",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "randomDiamondShd_1": {
+      "itemId": "randomDiamondShd_1",
+      "name": "로도스 아일랜드 상여금",
+      "description": "누가 꺼낸건지 알 수 없는 돈봉투. 하지만 로도스 아일랜드의 모두에게 희망이 가득하길 바라는 마음만은 진심이다.",
+      "rarity": 4,
+      "iconId": "randomDiamondShd_1",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 30006,
+      "usage": "로도스 아일랜드의 모두에게 나눠주는 상여금.안에는 랜덤한 액수의 재화와 축복이 담겨있다.  ",
+      "obtainApproach": "선물",
+      "classifyType": "CONSUME",
+      "itemType": "VOUCHER_MGACHA",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "CRISIS_SHOP_COIN": {
+      "itemId": "CRISIS_SHOP_COIN",
+      "name": "협약 상금",
+      "description": "냉혹하지만 효과적인 상금 제도. 위기 협약 시스템이 정상적으로 운영되도록 해주는 유일한 보증이다.",
+      "rarity": 4,
+      "iconId": "CRISIS_SHOP_COIN",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 10004,
+      "usage": "위기 협약을 완료한 후 획득하는 보수. 보급품으로 교환할 수 있다.",
+      "obtainApproach": "위기 협약 보상",
+      "classifyType": "NORMAL",
+      "itemType": "CRS_SHOP_COIN",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "CRISIS_RUNE_COIN": {
+      "itemId": "CRISIS_RUNE_COIN",
+      "name": "작전 협의",
+      "description": "혼란의 소멸이 질서의 설립을 의미할 필요는 없다. \"하늘이 초래하는 재앙을 사람이 초래하는 재해로\"… 위기 협약은 적어도, 당신에게 해결 방식을 하나 제공해주었다.",
+      "rarity": 4,
+      "iconId": "CRISIS_RUNE_COIN",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "협의의 상징. 더 많은 위기 협약 내용을 개방하는데 사용된다.",
+      "obtainApproach": "위기 협약 보상",
+      "classifyType": "NONE",
+      "itemType": "CRS_RUNE_COIN",
       "stageDropList": [],
       "buildingProductList": []
     }
@@ -5200,6 +6362,11 @@
     "ap_supply_lt_100": {
       "id": "ap_supply_lt_100",
       "ap": 100,
+      "hasTs": true
+    },
+    "ap_supply_lt_010": {
+      "id": "ap_supply_lt_010",
+      "ap": 10,
       "hasTs": true
     }
   }

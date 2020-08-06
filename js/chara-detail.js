@@ -341,22 +341,19 @@
         $(".fa-sort-amount-up").click(event => event.stopPropagation());
         $(".fa-sort-amount-down").click(event => event.stopPropagation());
         $('#lefthandtoggle').click(function(event){
-            if(lefthand=="true")
-                lefthand = "false"
-            else 
-                lefthand = "true"
-            localStorage.setItem("lefthand",lefthand)
+            lefthand = !lefthand
+            localStorage.setItem("lefthand",JSON.stringify(lefthand))
             // console.log(lefthand)
             location.reload()
         })
-        if(typeof localStorage.lefthand ==="undefined"){
-            localStorage.setItem("leftHand","false")
-            lefthand = "false"
+        if(!localStorage.getItem('lefthand')){
+            lefthand = false
+            localStorage.setItem("leftHand",JSON.stringify(lefthand))
 
         }else{
-            lefthand = localStorage.lefthand
+            lefthand = JSON.parse(localStorage.getItem('lefthand'))
         }
-        if(lefthand=="true")
+        if(lefthand)
         $('#lefthandtoggle').css("background-color","#0077AA")
         else 
         $('#lefthandtoggle').css("background-color","#222")
@@ -372,8 +369,7 @@
              }
          });
         
-        if(typeof localStorage.gameRegion === "undefined" || localStorage.gameRegion == ""|| localStorage.webLang == ""){
-            console.log("game region undefined");
+        if(!localStorage.getItem('gameRegion') || !localStorage.getItem('webLang')){
             localStorage.setItem("gameRegion", 'cn');
             localStorage.setItem("webLang", 'en');
             reg = "cn";
@@ -384,11 +380,11 @@
                 // console.log("TEST1")
             }
         } else {
-            console.log(localStorage.webLang);
+            console.log(localStorage.getItem('webLang'));
             reg = "cn";
             lang = "en";
         }
-        if(typeof localStorage.selectedOPDetails === "undefined" || localStorage.selectedOPDetails == ""){
+        if(!localStorage.getItem('selectedOPDetails')){
             console.log("selected OP undefined");
             var vars = getUrlVars();
             console.log(vars)
@@ -403,7 +399,7 @@
                 });
                 selectOperator(opname);
             } else {
-                localStorage.setItem("selectedOP","");
+                localStorage.removeItem("selectedOP");
             }
         } else {
             console.log("selected OP defined");
@@ -429,7 +425,7 @@
                 })
                 
             } else {
-                selectedOP = localStorage.selectedOPDetails;
+                selectedOP = localStorage.getItem('selectedOPDetails');
                 var opname = db.chars[selectedOP].name;
             }
             
@@ -524,7 +520,7 @@
         $("#opname").val("");
         $('#operatorsResult').empty();
         $('#operatorsResult').hide();
-        localStorage.selectedOPDetails = "";
+        localStorage.removeItem('selectedOPDetails');
         history.pushState(null, '', window.location.pathname); 
     }
 
@@ -1049,7 +1045,7 @@
                 // console.log(v);
                 opdataFull = v;
                 opKey = key;
-                localStorage.selectedOPDetails = key;
+                localStorage.setItem('selectedOPDetails', key);
                 return false
             });
 
@@ -1384,7 +1380,7 @@
                         skilljson.value = skillinfo.value
 
                         skilldetails.push(skilljson)
-                        if(skillinfo.key=="force") force= skillinfo.value
+                        if(skillinfo.key=="force"||skillinfo.key=="base_force_level") force= skillinfo.value
                         if(v2.duration==-1){
                             if(skillinfo.key =="duration"){
                                 spDuration = skillinfo.value;
@@ -1397,10 +1393,12 @@
                     });
                     // console.log(skilldetails)
                     switch (force) {
+                        case -1: force = "Very Small [-1]";break;
                         case 0: force = "Small [0]";break;
                         case 1: force = "Medium [1]";break;
                         case 2: force = "Large [2]";break;
                         case 3: force = "Huge [3]";break;
+                        case 4: force = "Extreme [4]";break;
                     }
                     // console.log(currSkill)
                     var skillType = ""
@@ -2178,8 +2176,10 @@
     function TalentParse(combTalents){
         // console.log(combTalents)
         var talent = []
+        var talentnum = 0
         combTalents.forEach(combcandidate => {
-            let talentlist = []
+            let talentlist = [] 
+            
             combcandidate.forEach(eachtalent => {
                 var imagereq = []
                 if(eachtalent.talent.unlockCondition.level >0)
@@ -2193,16 +2193,61 @@
                 var currTalentDesc = eachtalent.talentTL?eachtalent.talentTL.desc:eachtalent.talent.description
                 // console.log(eachtalent.talent.name)
                 var isTalentRange =  eachtalent.talent.name=="新人教官"?undefined:eachtalent.talent.rangeId
+
+                var talentdetails = []
+                eachtalent.talent.blackboard.forEach(talentInfo=>{
+                    var talentjson={}
+                    talentjson.name = db.effect[talentInfo.key]?db.effect[talentInfo.key]:talentInfo.key
+                    talentjson.key = talentInfo.key
+                    talentjson.value = talentInfo.value
+
+                    talentdetails.push(talentjson)
+                })
+
+                var detailtable = []
+                var detailHeader = ''
+                console.log(talentdetails)
+                
+                if(talentdetails.length>0){
+                    var talenthtmldetail = ""
+                    
+                    talentdetails.forEach(currdetails => {
+                        
+                        talenthtmldetail+=`
+                        <div style="background:#444;margin:4px;padding:2px;padding-top:8px;background:#444;border-radius:2px;color: #999999">
+                                ${titledMaker2(currdetails.name,currdetails.key)}  ${currdetails.value}
+                        </div>`
+                    });
+                    detailHeader = `<button id='talentdetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler2("talentdetailcontent${talentnum}")'style="display:inline-block;color:#aaa;text-align:center;background:#333;padding:2px;font-size:12px">Talent Details <i class="fas fa-caret-down"></i></button>`
+                    detailtable = ` 
+                        <div id='talentdetailcontent${talentnum}' class="ak-shadow talentdetailcontent" style="display:none;margin-bottom:8px;padding-top:10px;padding:2px;background:#666">    
+                            ${talenthtmldetail}
+                        </div>
+                    `
+
+                    talentnum+=1
+                }else{
+                    detailtable=""
+                }
+
                 var info = `<div style="color:#999;background:#222;display:inline-block;padding:1px;padding-left:3px;padding-right:3px;border-radius:2px">${imagereq.join("")}</div>`
                 talentlist.push(`
                 <div style="background:#444;margin:4px;padding:2px;padding-top:2px;background:#444;border-radius:2px;">
                 <div style="vertical-align:top;${isTalentRange?`width:71%;display:inline-block;padding-right:0px;margin-right:-6px;height:100%`:""}">
                     <div style="color:#222;font-size:13px;background:#999;display:inline-block;padding:2px;border-radius:2px">${currTalentName} ${info}</div>
-                    <div style="font-size:11px;">${currTalentDesc}</div>
+                    <div style="font-size:13px; font-family:'Source Sans Pro'">${currTalentDesc}
+                    ${detailHeader} 
+                    ${detailtable}
+                    </div>
+                    
                 </div>
                     ${isTalentRange?`<div style="display:inline-block;width:28%;padding:0px;margin:auto;padding-top:4px">${rangeMaker(eachtalent.talent.rangeId,false)}</div>`:""}
                 </div>
                 `)
+
+                
+                
+                
             });
             talent.push(`
                 <div class="ak-shadow" style="margin-bottom:8px;padding-top:10px;padding:2px;background:#666">
@@ -2274,12 +2319,14 @@
         // console.log(descriptions)
         descriptions.forEach(element => {
             if(element){
-                let muhRegex = /<@ba\.kw>(.*?)<\/>/g
-                let currSpeciality = muhRegex.exec(element)
+                // let muhRegex = /<@ba\.kw>(.*?)<\/>/g
+                // let currSpeciality = muhRegex.exec(element)
+                // console.log(element)
+                let currSpeciality = element.replace(/\<(.*?)\>/gi,"")
                 // console.log(currSpeciality)
                 let filterDesc
                 if(currSpeciality){
-                    splitdesc.push([element.replace(currSpeciality[0],""),currSpeciality[1]])
+                    splitdesc.push([currSpeciality])
                 }else{
                     splitdesc.push([element])
                 }
@@ -2336,7 +2383,7 @@
         // console.log(trait)
         let isReplaced = false
         splitdesc.forEach(element => {
-            if(element.length>1){
+            if(element.length>0){
                 let typetl = db.attacktype.find(search=>search.type_cn==element.join(""))
                 // if(!typetl) typetl = db.attacktype.find(search=>search.type_cn==element[1])
                 if(typetl&&!color) color = typetl.type_color?typetl.type_color:undefined
@@ -2347,7 +2394,7 @@
                 let currTLconv = muhRegex.exec(typetl?typetl.type_en:element.join(""))
                 // console.log(currTLconv)
                 if(currTLconv){
-                    console.log(currTLconv)
+                    // console.log(currTLconv)
                     var textreplace = 'Value'
                     if(trait && trait.candidates.length>1){
                         textreplace =  `<div style="color:#999;background:#222;display:inline-block;padding:1px;padding-left:3px;padding-right:3px;border-radius:2px">(value)</div>`
@@ -2643,7 +2690,7 @@
 
         // if(skillTL){
         if(desc){
-            var matches = desc.match(/(\{\{(.*?)\}:.0(.)\}|\{(.*?)\})/gm);
+            var matches = desc.match(/(\{\{(.*?)\}:.0(.)\}|\{\{(.*?)\}:.1(.)\}|\{(.*?)\})/gm);
             // console.log(matches)
             $.each(matches,function(i,v){
                 var submatches = v.match(/(?:(?!\{).(?!:))+/gm);
@@ -2668,7 +2715,7 @@
                     if(typeof submatches[1] != "undefined"){
                         // console.log(submatches[1])
                         if(submatches[1].includes("%")){
-                            value = Math.round((value * 100)) + "%";
+                            value = Math.round((value * 100000))/1000 + "%";
                         }
                     }
                     desc = desc.replace(v,`<div class="stat-important">${value}</div>`);
@@ -2726,7 +2773,8 @@
         if(spinewidgettoken&&token&&spinewidgettoken.loaded){
             
             LoadAnimationToken(token)
-        }else if(spinewidget&&spinewidget.loaded){
+        }
+        if(spinewidget&&spinewidget.loaded){
 
             var animskill = db.animlist[opdataFull.id]
             console.log(skillnum)
@@ -3339,6 +3387,11 @@
             $(`.${el}`).slideToggle(100)
             console.log("WEEEI")
     }
+    function SlideToggler2(el){
+
+            $(`#${el}`).slideToggle(100)
+            console.log("WEEEI")
+    }
 
     function ZoomChibi(el){
 
@@ -3403,8 +3456,8 @@
     }
     
     function changeUILanguage(){
-        reg = localStorage.gameRegion;
-        lang = localStorage.webLang;
+        reg = localStorage.getItem('gameRegion');
+        lang = localStorage.getItem('webLang');
 
         $('#display-reg').text(reg.toUpperCase())
 

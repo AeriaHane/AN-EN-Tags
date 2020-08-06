@@ -91,6 +91,10 @@
           "occPer": "ALWAYS"
         },
         {
+          "stageId": "sub_07-1-1",
+          "occPer": "ALWAYS"
+        },
+        {
           "stageId": "sub_04-2-3",
           "occPer": "ALWAYS"
         },
@@ -290,6 +294,10 @@
           "occPer": "ALWAYS"
         },
         {
+          "stageId": "main_07-11",
+          "occPer": "ALWAYS"
+        },
+        {
           "stageId": "sub_06-1-1",
           "occPer": "ALWAYS"
         },
@@ -354,7 +362,7 @@
       "iconId": "TKT_RECRUIT",
       "overrideBkg": null,
       "stackIconId": null,
-      "sortId": 10014,
+      "sortId": 10016,
       "usage": "罗德岛人事部颁发的许可书，可从公开渠道招聘一位干员。",
       "obtainApproach": "采购中心、任务奖励",
       "classifyType": "NORMAL",
@@ -370,7 +378,7 @@
       "iconId": "TKT_INST_FIN",
       "overrideBkg": null,
       "stackIconId": null,
-      "sortId": 10015,
+      "sortId": 10017,
       "usage": "罗德岛人事部颁发的加急许可证书，可以通过特殊手段立即传唤一位新晋干员。",
       "obtainApproach": "采购中心、任务奖励",
       "classifyType": "NORMAL",
@@ -386,7 +394,7 @@
       "iconId": "TKT_GACHA",
       "overrideBkg": null,
       "stackIconId": null,
-      "sortId": 10013,
+      "sortId": 10015,
       "usage": "罗德岛人事部颁发的许可书，可从猎头公司招聘一位干员。",
       "obtainApproach": "采购中心、任务奖励",
       "classifyType": "NORMAL",
@@ -402,7 +410,7 @@
       "iconId": "TKT_GACHA_10",
       "overrideBkg": null,
       "stackIconId": null,
-      "sortId": 10011,
+      "sortId": 10013,
       "usage": "罗德岛人事部颁发的许可书，用于从猎头公司批量招聘干员。一次可以招聘十位干员。",
       "obtainApproach": "采购中心",
       "classifyType": "NORMAL",
@@ -446,6 +454,14 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act11d0_03",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act10d5_02",
+          "occPer": "ALWAYS"
+        },
+        {
           "stageId": "act9d0_01",
           "occPer": "ALWAYS"
         },
@@ -483,6 +499,10 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act11d0_04",
+          "occPer": "ALMOST"
+        },
+        {
           "stageId": "act9d0_04",
           "occPer": "ALWAYS"
         },
@@ -500,6 +520,10 @@
         },
         {
           "stageId": "main_05-10",
+          "occPer": "USUAL"
+        },
+        {
+          "stageId": "main_07-14",
           "occPer": "USUAL"
         },
         {
@@ -547,6 +571,14 @@
         {
           "stageId": "main_06-05",
           "occPer": "USUAL"
+        },
+        {
+          "stageId": "main_07-01",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_07-05",
+          "occPer": "USUAL"
         }
       ],
       "buildingProductList": [
@@ -573,6 +605,10 @@
         {
           "stageId": "main_04-06",
           "occPer": "SOMETIMES"
+        },
+        {
+          "stageId": "main_07-01",
+          "occPer": "SOMETIMES"
         }
       ],
       "buildingProductList": [
@@ -596,6 +632,10 @@
       "classifyType": "MATERIAL",
       "itemType": "MATERIAL",
       "stageDropList": [
+        {
+          "stageId": "act11d0_01",
+          "occPer": "USUAL"
+        },
         {
           "stageId": "act9d0_02",
           "occPer": "USUAL"
@@ -633,6 +673,10 @@
       "classifyType": "MATERIAL",
       "itemType": "MATERIAL",
       "stageDropList": [
+        {
+          "stageId": "act11d0_05",
+          "occPer": "OFTEN"
+        },
         {
           "stageId": "act9d0_05",
           "occPer": "OFTEN"
@@ -694,6 +738,14 @@
         {
           "stageId": "main_06-14",
           "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_07-07",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_07-13",
+          "occPer": "OFTEN"
         }
       ],
       "buildingProductList": [
@@ -720,6 +772,10 @@
         {
           "stageId": "main_04-10",
           "occPer": "SOMETIMES"
+        },
+        {
+          "stageId": "main_07-07",
+          "occPer": "SOMETIMES"
         }
       ],
       "buildingProductList": [
@@ -743,6 +799,10 @@
       "classifyType": "MATERIAL",
       "itemType": "MATERIAL",
       "stageDropList": [
+        {
+          "stageId": "act11d0_02",
+          "occPer": "ALWAYS"
+        },
         {
           "stageId": "act9d0_02",
           "occPer": "ALWAYS"
@@ -780,6 +840,10 @@
       "classifyType": "MATERIAL",
       "itemType": "MATERIAL",
       "stageDropList": [
+        {
+          "stageId": "act11d0_04",
+          "occPer": "ALWAYS"
+        },
         {
           "stageId": "act7d5_03",
           "occPer": "ALWAYS"
@@ -831,6 +895,10 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act10d5_05",
+          "occPer": "OFTEN"
+        },
+        {
           "stageId": "act4d0_05",
           "occPer": "USUAL"
         },
@@ -849,6 +917,10 @@
         {
           "stageId": "main_06-04",
           "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_07-03",
+          "occPer": "USUAL"
         }
       ],
       "buildingProductList": [
@@ -902,6 +974,14 @@
       "classifyType": "MATERIAL",
       "itemType": "MATERIAL",
       "stageDropList": [
+        {
+          "stageId": "act11d0_01",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act10d5_01",
+          "occPer": "ALWAYS"
+        },
         {
           "stageId": "act9d0_01",
           "occPer": "ALWAYS"
@@ -960,6 +1040,14 @@
           "occPer": "USUAL"
         },
         {
+          "stageId": "main_07-02",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "main_07-05",
+          "occPer": "OFTEN"
+        },
+        {
           "stageId": "sub_03-1-1",
           "occPer": "ALWAYS"
         },
@@ -1007,6 +1095,10 @@
         },
         {
           "stageId": "main_06-03",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_07-10",
           "occPer": "OFTEN"
         }
       ],
@@ -1062,6 +1154,10 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act11d0_03",
+          "occPer": "ALWAYS"
+        },
+        {
           "stageId": "act9d0_03",
           "occPer": "ALWAYS"
         },
@@ -1095,6 +1191,10 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act10d5_04",
+          "occPer": "ALWAYS"
+        },
+        {
           "stageId": "act9d0_04",
           "occPer": "OFTEN"
         },
@@ -1120,6 +1220,10 @@
         },
         {
           "stageId": "main_06-01",
+          "occPer": "ALMOST"
+        },
+        {
+          "stageId": "main_07-09",
           "occPer": "ALMOST"
         },
         {
@@ -1149,6 +1253,10 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act10d5_06",
+          "occPer": "OFTEN"
+        },
+        {
           "stageId": "act9d0_08",
           "occPer": "USUAL"
         },
@@ -1162,6 +1270,10 @@
         },
         {
           "stageId": "main_06-09",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_07-16",
           "occPer": "OFTEN"
         },
         {
@@ -1221,6 +1333,10 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act11d0_02",
+          "occPer": "USUAL"
+        },
+        {
           "stageId": "act9d0_03",
           "occPer": "ALMOST"
         },
@@ -1254,6 +1370,14 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act11d0_05",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act10d5_03",
+          "occPer": "ALMOST"
+        },
+        {
           "stageId": "act4d0_03",
           "occPer": "ALMOST"
         },
@@ -1274,7 +1398,19 @@
           "occPer": "USUAL"
         },
         {
+          "stageId": "main_07-10",
+          "occPer": "USUAL"
+        },
+        {
+          "stageId": "main_07-16",
+          "occPer": "USUAL"
+        },
+        {
           "stageId": "sub_06-2-1",
+          "occPer": "ALMOST"
+        },
+        {
+          "stageId": "sub_07-1-2",
           "occPer": "ALMOST"
         }
       ],
@@ -1300,6 +1436,10 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act11d0_07",
+          "occPer": "USUAL"
+        },
+        {
           "stageId": "act6d5_06",
           "occPer": "OFTEN"
         },
@@ -1317,6 +1457,10 @@
         },
         {
           "stageId": "main_06-07",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_07-12",
           "occPer": "OFTEN"
         }
       ],
@@ -1402,6 +1546,10 @@
         {
           "stageId": "main_06-10",
           "occPer": "USUAL"
+        },
+        {
+          "stageId": "main_07-04",
+          "occPer": "OFTEN"
         }
       ],
       "buildingProductList": []
@@ -1422,6 +1570,10 @@
       "stageDropList": [
         {
           "stageId": "main_04-04",
+          "occPer": "SOMETIMES"
+        },
+        {
+          "stageId": "main_07-04",
           "occPer": "SOMETIMES"
         }
       ],
@@ -1460,6 +1612,10 @@
         },
         {
           "stageId": "main_06-02",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_07-14",
           "occPer": "OFTEN"
         }
       ],
@@ -1510,6 +1666,10 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act11d0_08",
+          "occPer": "USUAL"
+        },
+        {
           "stageId": "act6d5_08",
           "occPer": "OFTEN"
         },
@@ -1532,6 +1692,10 @@
         {
           "stageId": "main_06-12",
           "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_07-15",
+          "occPer": "OFTEN"
         }
       ],
       "buildingProductList": []
@@ -1552,6 +1716,10 @@
       "stageDropList": [
         {
           "stageId": "main_04-08",
+          "occPer": "SOMETIMES"
+        },
+        {
+          "stageId": "main_07-15",
           "occPer": "SOMETIMES"
         }
       ],
@@ -1590,6 +1758,10 @@
         },
         {
           "stageId": "main_06-13",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_07-08",
           "occPer": "OFTEN"
         }
       ],
@@ -1703,6 +1875,14 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act10d5_07",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_07-06",
+          "occPer": "OFTEN"
+        },
+        {
           "stageId": "sub_04-4-1",
           "occPer": "OFTEN"
         },
@@ -1727,6 +1907,10 @@
       "classifyType": "MATERIAL",
       "itemType": "MATERIAL",
       "stageDropList": [
+        {
+          "stageId": "main_07-06",
+          "occPer": "SOMETIMES"
+        },
         {
           "stageId": "sub_05-4-1",
           "occPer": "SOMETIMES"
@@ -1753,6 +1937,10 @@
       "classifyType": "MATERIAL",
       "itemType": "MATERIAL",
       "stageDropList": [
+        {
+          "stageId": "act11d0_06",
+          "occPer": "USUAL"
+        },
         {
           "stageId": "act7d5_06",
           "occPer": "OFTEN"
@@ -3498,6 +3686,22 @@
       "stageDropList": [],
       "buildingProductList": []
     },
+    "p_char_376_therex": {
+      "itemId": "p_char_376_therex",
+      "name": "THRM-EX的信物",
+      "description": "一根发光的储热芯，包装上面用黑色的特别粗的印刷体字打印着 \"感受热情！\"",
+      "rarity": 0,
+      "iconId": "p_char_376_therex",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 1100003,
+      "usage": "用于提升THRM-EX的潜能。",
+      "obtainApproach": "干员入职的馈赠",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
     "p_char_502_nblade": {
       "itemId": "p_char_502_nblade",
       "name": "夜刀的信物",
@@ -4426,6 +4630,38 @@
       "stageDropList": [],
       "buildingProductList": []
     },
+    "p_char_258_podego": {
+      "itemId": "p_char_258_podego",
+      "name": "波登可的信物",
+      "description": "一包花种，能够让博士的办公室变为花田。只要不过敏，哪里都是庭院。",
+      "rarity": 3,
+      "iconId": "p_char_258_podego",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 800037,
+      "usage": "用于提升波登可的潜能。",
+      "obtainApproach": "干员入职的馈赠",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_328_cammou": {
+      "itemId": "p_char_328_cammou",
+      "name": "卡达的信物",
+      "description": "一张塞满内容的光盘，里面全是卡达近年来制作的高人气视频。包含了花絮和未删减部分，某些场景一刀未切。",
+      "rarity": 3,
+      "iconId": "p_char_328_cammou",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 800038,
+      "usage": "用于提升卡达的潜能。",
+      "obtainApproach": "干员入职的馈赠",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
     "p_char_128_plosis": {
       "itemId": "p_char_128_plosis",
       "name": "白面鸮的信物",
@@ -5178,6 +5414,22 @@
       "stageDropList": [],
       "buildingProductList": []
     },
+    "p_char_230_savage": {
+      "itemId": "p_char_230_savage",
+      "name": "暴行的信物",
+      "description": "一串蛋白石项链。希望你能把它交付给正确的人。",
+      "rarity": 4,
+      "iconId": "p_char_230_savage",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700048,
+      "usage": "用于提升暴行的潜能。",
+      "obtainApproach": "干员入职的馈赠",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
     "p_char_254_vodfox": {
       "itemId": "p_char_254_vodfox",
       "name": "巫恋的信物",
@@ -5204,6 +5456,166 @@
       "stackIconId": null,
       "sortId": 700049,
       "usage": "用于提升铸铁的潜能。",
+      "obtainApproach": "干员入职的馈赠",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_401_elysm": {
+      "itemId": "p_char_401_elysm",
+      "name": "极境的信物",
+      "description": "一张复杂详尽的手绘地形线路图。如果看不懂，极境本人也很乐意亲自领路。",
+      "rarity": 4,
+      "iconId": "p_char_401_elysm",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700050,
+      "usage": "用于提升极境的潜能。",
+      "obtainApproach": "干员入职的馈赠",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_378_asbest": {
+      "itemId": "p_char_378_asbest",
+      "name": "石棉的信物",
+      "description": "一个探险套装。她的意思似乎是，如果你有空的话，可以跟她一起出去走走。",
+      "rarity": 4,
+      "iconId": "p_char_378_asbest",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700051,
+      "usage": "用于提升石棉的潜能。",
+      "obtainApproach": "干员入职的馈赠",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_343_tknogi": {
+      "itemId": "p_char_343_tknogi",
+      "name": "月禾的信物",
+      "description": "由月禾本人制作与祈福的御守。听说带上能让人心平气和，还可以抚平对黑夜的恐惧。",
+      "rarity": 4,
+      "iconId": "p_char_343_tknogi",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700052,
+      "usage": "用于提升月禾的潜能。",
+      "obtainApproach": "干员入职的馈赠",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_405_absin": {
+      "itemId": "p_char_405_absin",
+      "name": "苦艾的信物",
+      "description": "一件大尺寸的乌萨斯制式防击打背心。前一任主人穿起来不太合身，但她很少将其脱下。",
+      "rarity": 4,
+      "iconId": "p_char_405_absin",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700053,
+      "usage": "用于提升苦艾的潜能。",
+      "obtainApproach": "干员入职的馈赠",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_373_lionhd": {
+      "itemId": "p_char_373_lionhd",
+      "name": "莱恩哈特的信物",
+      "description": "一双新潮的限定款运动鞋。似乎为维多利亚风靡的球类运动做了特别的辅助设计，技术支持源自雷姆必拓。",
+      "rarity": 4,
+      "iconId": "p_char_373_lionhd",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700054,
+      "usage": "用于提升莱恩哈特的潜能。",
+      "obtainApproach": "干员入职的馈赠",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_294_ayer": {
+      "itemId": "p_char_294_ayer",
+      "name": "断崖的信物",
+      "description": "一本自制侦察与反侦察指南。“你最好能在任何情况下保护好自己”，他是这样想的。",
+      "rarity": 4,
+      "iconId": "p_char_294_ayer",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700055,
+      "usage": "用于提升断崖的潜能。",
+      "obtainApproach": "干员入职的馈赠",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_345_folnic": {
+      "itemId": "p_char_345_folnic",
+      "name": "亚叶的信物",
+      "description": "一张科普海报。详细阐述了各种亚健康情况及治疗方法，不知为何背面附上了大量骇人听闻的真实案例。",
+      "rarity": 4,
+      "iconId": "p_char_345_folnic",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700056,
+      "usage": "用于提升亚叶的潜能。",
+      "obtainApproach": "干员入职的馈赠",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_344_beewax": {
+      "itemId": "p_char_344_beewax",
+      "name": "蜜蜡的信物",
+      "description": "包含精油、软刷、磨砂条在内的全套角护理器具，沙漠部族内定制，重金难求。只要不嫌贵，也可以只用它来修修指甲。",
+      "rarity": 4,
+      "iconId": "p_char_344_beewax",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700057,
+      "usage": "用于提升蜜蜡的潜能。",
+      "obtainApproach": "干员入职的馈赠",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_349_chiave": {
+      "itemId": "p_char_349_chiave",
+      "name": "贾维的信物",
+      "description": "一枚由他亲手打造的代表“贾维团伙”的标牌。上面还刻上了你的名字。",
+      "rarity": 4,
+      "iconId": "p_char_349_chiave",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700058,
+      "usage": "用于提升贾维的潜能。",
+      "obtainApproach": "干员入职的馈赠",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_336_folivo": {
+      "itemId": "p_char_336_folivo",
+      "name": "稀音的信物",
+      "description": "一个新款照相机。真正的景色，需要由自己来拍摄。",
+      "rarity": 4,
+      "iconId": "p_char_336_folivo",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700059,
+      "usage": "用于提升稀音的潜能。",
       "obtainApproach": "干员入职的馈赠",
       "classifyType": "MATERIAL",
       "itemType": "MATERIAL",
@@ -5562,6 +5974,70 @@
       "stageDropList": [],
       "buildingProductList": []
     },
+    "p_char_400_weedy": {
+      "itemId": "p_char_400_weedy",
+      "name": "温蒂的信物",
+      "description": "一摞仿生海龙设计图。上面有大量她本人做的一些注释，上面写着“即使猴子也可以照着做一只新的”，大概吧。",
+      "rarity": 5,
+      "iconId": "p_char_400_weedy",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 600023,
+      "usage": "用于提升温蒂的潜能。",
+      "obtainApproach": "干员入职的馈赠",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_113_cqbw": {
+      "itemId": "p_char_113_cqbw",
+      "name": "W的信物",
+      "description": "一张W比着“V”手势的自拍照片。照片的一角是另一名白发的萨卡兹女性，她似乎正站在不远处与其他人交谈。",
+      "rarity": 5,
+      "iconId": "p_char_113_cqbw",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 600024,
+      "usage": "用于提升W的潜能。",
+      "obtainApproach": "干员入职的馈赠",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_197_poca": {
+      "itemId": "p_char_197_poca",
+      "name": "早露的信物",
+      "description": "一把裁纸刀。她郑重其事地交给你，但你不知缘由。",
+      "rarity": 5,
+      "iconId": "p_char_197_poca",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 600025,
+      "usage": "用于提升早露的潜能。",
+      "obtainApproach": "干员入职的馈赠",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_358_lisa": {
+      "itemId": "p_char_358_lisa",
+      "name": "铃兰的信物",
+      "description": "一捧铃兰花。当问及小丽萨的干员代号有什么自己的想法时，她正好抱着这盆铃兰。",
+      "rarity": 5,
+      "iconId": "p_char_358_lisa",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 600026,
+      "usage": "用于提升铃兰的潜能。",
+      "obtainApproach": "干员入职的馈赠",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
     "bilibili001": {
       "itemId": "bilibili001",
       "name": "预约干员随机4选1",
@@ -5821,7 +6297,7 @@
       "stackIconId": null,
       "sortId": 50004,
       "usage": "用以临时维持理智的应急合剂，方便携带的试用小样。",
-      "obtainApproach": "活动关卡掉落",
+      "obtainApproach": "活动期间关卡限时掉落",
       "classifyType": "CONSUME",
       "itemType": "AP_SUPPLY",
       "stageDropList": [],
@@ -6502,6 +6978,132 @@
       ],
       "buildingProductList": []
     },
+    "act9d4_point_token": {
+      "itemId": "act9d4_point_token",
+      "name": "游击队员徽章",
+      "description": "“请把这个带回我的祖国。”",
+      "rarity": 4,
+      "iconId": "act9d4_point_token",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "从切尔诺伯格核心城各处搜集到的游击队员徽章，交给特定的人可以获得一定的回报。",
+      "obtainApproach": "限时活动任务、活动日常",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "act10d5_token_biscuit": {
+      "itemId": "act10d5_token_biscuit",
+      "name": "彼得海姆热销饼干",
+      "description": "因保存不善而多有碎裂的袋装零食，想要在其中找出一块完整的饼干，需要一定的运气。\n虽有残缺，但外表依旧可爱，好味道也不受任何影响。",
+      "rarity": 4,
+      "iconId": "act10d5_token_biscuit",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "彼得海姆中学独家贩售，在学生中广受好评，可用于兑换各类物资。",
+      "obtainApproach": "活动期间关卡限时掉落",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [
+        {
+          "stageId": "act10d5_01",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act10d5_02",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act10d5_03",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act10d5_04",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act10d5_05",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act10d5_06",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act10d5_07",
+          "occPer": "ALWAYS"
+        }
+      ],
+      "buildingProductList": []
+    },
+    "act11d0_token_currency": {
+      "itemId": "act11d0_token_currency",
+      "name": "老旧贵族领铸币",
+      "description": "这种古老铸币的主人早已远离这片边陲之地，即使如此，身负开拓功勋的贵族后裔依旧要求得到沃伦姆德的尊重，于是他们立下律法，让流通性来满足虚荣。",
+      "rarity": 4,
+      "iconId": "act11d0_token_currency",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "在沃伦姆德依旧具有流通性的古老货币，用以在八月集市兑换奖励。",
+      "obtainApproach": "活动期间关卡限时掉落",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [
+        {
+          "stageId": "act11d0_01",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act11d0_02",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act11d0_03",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act11d0_04",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act11d0_05",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act11d0_06",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act11d0_07",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act11d0_08",
+          "occPer": "ALWAYS"
+        }
+      ],
+      "buildingProductList": []
+    },
+    "act11d0_token_warrant": {
+      "itemId": "act11d0_token_warrant",
+      "name": "沃伦姆德搜查令",
+      "description": "把它握在手中，仿佛莱塔尼亚鲜明的律法从未动摇。但看着沃伦姆德的惨状，你知道这并非事实——深入矿道、树林和无主的丘陵，将潜藏的暴徒们绳之以法。",
+      "rarity": 4,
+      "iconId": "act11d0_token_warrant",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "由沃伦姆德宪兵队颁发，用以深入沦陷区，追捕在动乱中逃窜的暴徒。",
+      "obtainApproach": "活动任务获得",
+      "classifyType": "NONE",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
     "voucher_item_4pick1": {
       "itemId": "voucher_item_4pick1",
       "name": "干员兑换券",
@@ -6544,6 +7146,38 @@
       "stackIconId": null,
       "sortId": 30002,
       "usage": "用于兑换一名干员。",
+      "obtainApproach": "采购中心",
+      "classifyType": "CONSUME",
+      "itemType": "VOUCHER_PICK",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "voucher_recruitR5_pick2": {
+      "itemId": "voucher_recruitR5_pick2",
+      "name": "火神因陀罗招募券",
+      "description": "从“因陀罗”、“火神”两位公开招募限定5星干员中选择其一。",
+      "rarity": 4,
+      "iconId": "voucher_recruitR5_pick2",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 30001,
+      "usage": "用于兑换一名干员。",
+      "obtainApproach": "收集蚀刻章获得",
+      "classifyType": "CONSUME",
+      "itemType": "VOUCHER_PICK",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "voucher_item_pick601": {
+      "itemId": "voucher_item_pick601",
+      "name": "高级干员调用凭证",
+      "description": "可在一定范围内自选一位六星干员，范围包含『热情，膨胀，爆发 !』及过去的干员寻访池。",
+      "rarity": 4,
+      "iconId": "voucher_item_pick601",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 30001,
+      "usage": "由罗德岛人事部批发的高级资深干员调用凭证，做了很多案前工作，想要百分百获得帮助并不轻松。",
       "obtainApproach": "采购中心",
       "classifyType": "CONSUME",
       "itemType": "VOUCHER_PICK",
@@ -6630,6 +7264,22 @@
       "stageDropList": [],
       "buildingProductList": []
     },
+    "randomMaterial_3": {
+      "itemId": "randomMaterial_3",
+      "name": "32h战略配给",
+      "description": "一份包含各类材料和资料的配给。从各个角度还原详述了发生在切尔诺伯格核心城的那场大战，即使现在看来也令人心有余悸。",
+      "rarity": 4,
+      "iconId": "randomMaterial_3",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 30005,
+      "usage": "纪念博士入职一周年的物资配给，包含多种随机材料。",
+      "obtainApproach": "活动期间关卡限时掉落",
+      "classifyType": "CONSUME",
+      "itemType": "VOUCHER_MGACHA",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
     "randomDiamondShd_1": {
       "itemId": "randomDiamondShd_1",
       "name": "罗德岛迎春红包",
@@ -6691,6 +7341,102 @@
       "obtainApproach": "危机合约奖励",
       "classifyType": "CONSUME",
       "itemType": "VOUCHER_MGACHA",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "randomMaterialRune_1": {
+      "itemId": "randomMaterialRune_1",
+      "name": "黄铁行动物资补给",
+      "description": "来自危机合约的材料补给箱。给予努力治疗着这片大地的人们的微小回报。----危机合约",
+      "rarity": 4,
+      "iconId": "randomMaterialRune_1",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 30005,
+      "usage": "装有各种物资补给，包含多种随机材料。",
+      "obtainApproach": "危机合约奖励",
+      "classifyType": "CONSUME",
+      "itemType": "VOUCHER_MGACHA",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "randomMaterialRune_2": {
+      "itemId": "randomMaterialRune_2",
+      "name": "利刃行动物资补给",
+      "description": "来自危机合约的材料补给箱。给予努力治疗着这片大地的人们的微小回报。----危机合约",
+      "rarity": 4,
+      "iconId": "randomMaterialRune_2",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 30005,
+      "usage": "装有各种物资补给，包含多种随机材料。",
+      "obtainApproach": "危机合约奖励",
+      "classifyType": "CONSUME",
+      "itemType": "VOUCHER_MGACHA",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "LMTGS_COIN_903": {
+      "itemId": "LMTGS_COIN_903",
+      "name": "寻访数据契约",
+      "description": "与猎头公司长久且稳定的合作关系带来的回报，可有效控制支出。不过，但愿不是每次都需要用到这个手段。",
+      "rarity": 4,
+      "iconId": "LMTGS_COIN_903",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 10009,
+      "usage": "新型招聘合约所约定的一种时限货币，累积一定数量后可在指定时期内招聘指定干员。",
+      "obtainApproach": "干员入职的馈赠",
+      "classifyType": "NORMAL",
+      "itemType": "LMTGS_COIN",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "EPGS_COIN": {
+      "itemId": "EPGS_COIN",
+      "name": "寻访参数模型",
+      "description": "能够考虑到这一点，多少可以证明猎头公司的诚意。需要注意的是，如果试图用这种手段来补充资源，恐怕会得不偿失。",
+      "rarity": 3,
+      "iconId": "EPGS_COIN",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 10010,
+      "usage": "新型招聘合约中对于过期契约的处理手段，可用来兑换各种资源。",
+      "obtainApproach": "寻访数据契约过期后自动兑换",
+      "classifyType": "NORMAL",
+      "itemType": "EPGS_COIN",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "LIMITED_TKT_GACHA_10_903": {
+      "itemId": "LIMITED_TKT_GACHA_10_903",
+      "name": "苏醒纪念寻访凭证",
+      "description": "为了确保人才扩展而应博士要求准备的应急手段，该批寻访条目具有一定的针对性与时效性，以及，小小的风险。",
+      "rarity": 4,
+      "iconId": "LIMITED_TKT_GACHA_10_903",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 10014,
+      "usage": "罗德岛人事部特别批发的许可书，在特殊的时间点上招揽特殊的人才，一次可招聘十位干员。",
+      "obtainApproach": "赠送",
+      "classifyType": "NORMAL",
+      "itemType": "LIMITED_TKT_GACHA_10",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "STORY_REVIEW_COIN": {
+      "itemId": "STORY_REVIEW_COIN",
+      "name": "事相碎片",
+      "description": "罗德岛的情报处理系统的一个次要功能。从庞杂的信息中提取有效情报后，经过特殊处理，以影像的形式还原出各种事件的流程，精确程度令当事人都感到惊叹。\n做成录像带的样子只是为了方便一般人理解。",
+      "rarity": 4,
+      "iconId": "STORY_REVIEW_COIN",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 10011,
+      "usage": "有效情报的拓扑模型，可以用来重建过往事件。",
+      "obtainApproach": "活动期间商店购买",
+      "classifyType": "NORMAL",
+      "itemType": "MATERIAL",
       "stageDropList": [],
       "buildingProductList": []
     }

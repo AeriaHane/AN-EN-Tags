@@ -1395,8 +1395,8 @@
 		"name_en": "Ch'en",
 		"name_jp": "",
 		"name_kr": "",
-		"characteristic_cn": "三测暂不实装",
-		"characteristic_en": "三测暂不实装",
+		"characteristic_cn": "",
+		"characteristic_en": "",
 		"characteristic_jp": "",
 		"characteristic_kr": "",
 		"camp": "龙门",
@@ -1405,10 +1405,12 @@
 		"sex": "女",
 		"tags": [
 			"近战位",
-			"群攻",
-			"支援"
+			"输出",
+			"爆发",
+			"高级资深干员"
 		],
-		"hidden": true
+		"hidden": false,
+		"globalHidden" : true
 	},
 	{
 		"name_cn": "拉普兰德",
@@ -1845,13 +1847,16 @@
 		"characteristic_jp": "",
 		"characteristic_kr": "",
 		"camp": "",
-		"type": "",
+		"type": "近卫",
 		"level": 3,
 		"sex": "女",
 		"tags": [
-			""
+			"近战位",
+			"群攻",
+			"生存"
 		],
-		"hidden": true
+		"hidden": false,
+		"globalHidden" : true
 	},
 	{
 		"name_cn": "诗怀雅",
@@ -1863,13 +1868,17 @@
 		"characteristic_jp": "",
 		"characteristic_kr": "",
 		"camp": "",
-		"type": "",
+		"type": "近卫",
 		"level": 5,
 		"sex": "女",
 		"tags": [
-			""
+			"输出",
+			"支援",
+			"近战位",
+			"资深干员"
 		],
-		"hidden": true
+		"hidden": false,
+		"globalHidden" : true
 	},
 	{
 		"name_cn": "斑点",
@@ -1881,13 +1890,16 @@
 		"characteristic_jp": "",
 		"characteristic_kr": "",
 		"camp": "",
-		"type": "",
+		"type": "重装",
 		"level": 3,
 		"sex": "男",
 		"tags": [
-			""
+			"近战位",
+			"治疗",
+			"防护"
 		],
-		"hidden": true
+		"hidden": false,
+		"globalHidden" : true
 	},
 	{
 		"name_cn": "格雷伊",
@@ -1899,13 +1911,16 @@
 		"characteristic_jp": "",
 		"characteristic_kr": "",
 		"camp": "",
-		"type": "",
+		"type": "术师",
 		"level": 4,
 		"sex": "男",
 		"tags": [
-			""
+			"减速",
+			"群攻",
+			"远程位"
 		],
-		"hidden": true
+		"hidden": false,
+		"globalHidden" : true
 	},
 	{
 		"name_cn": "黑",
@@ -2624,6 +2639,315 @@
 			"治疗",
 			"支援",
 			"远程位"
+		],
+		"hidden": true
+	},
+	{
+		"name_cn": "THRM-EX",
+		"name_en": "Thermal-EX",
+		"name_jp": "",
+		"name_kr": "",
+		"characteristic_cn": "",
+		"characteristic_en": "",
+		"characteristic_jp": "",
+		"characteristic_kr": "",
+		"camp": "",
+		"type": "特种",
+		"level": 1,
+		"sex": "男",
+		"tags": [
+			"支援机械",
+			"爆发",
+			"近战位"
+		],
+		"hidden": false,
+		"globalHidden" : true
+	},
+	{
+		"name_cn": "W",
+		"name_en": "W",
+		"name_jp": "",
+		"name_kr": "",
+		"characteristic_cn": "",
+		"characteristic_en": "",
+		"characteristic_jp": "",
+		"characteristic_kr": "",
+		"camp": "",
+		"type": "",
+		"level": 6,
+		"sex": "女",
+		"tags": [
+			""
+		],
+		"hidden": true
+	},
+	{
+		"name_cn": "温蒂",
+		"name_en": "Weedy",
+		"name_jp": "",
+		"name_kr": "",
+		"characteristic_cn": "",
+		"characteristic_en": "",
+		"characteristic_jp": "",
+		"characteristic_kr": "",
+		"camp": "",
+		"type": "",
+		"level": 6,
+		"sex": "女",
+		"tags": [
+			""
+		],
+		"hidden": true
+	},
+	{
+		"name_cn": "极境",
+		"name_en": "Elysium",
+		"name_jp": "",
+		"name_kr": "",
+		"characteristic_cn": "",
+		"characteristic_en": "",
+		"characteristic_jp": "",
+		"characteristic_kr": "",
+		"camp": "",
+		"type": "",
+		"level": 5,
+		"sex": "男",
+		"tags": [
+			""
+		],
+		"hidden": true
+	},
+	{
+		"name_cn": "石棉",
+		"name_en": "Asbestos",
+		"name_jp": "",
+		"name_kr": "",
+		"characteristic_cn": "",
+		"characteristic_en": "",
+		"characteristic_jp": "",
+		"characteristic_kr": "",
+		"camp": "",
+		"type": "",
+		"level": 5,
+		"sex": "女",
+		"tags": [
+			""
+		],
+		"hidden": true
+	},
+	{
+		"name_cn": "月禾",
+		"name_en": "Tsukinogi",
+		"name_jp": "",
+		"name_kr": "",
+		"characteristic_cn": "",
+		"characteristic_en": "",
+		"characteristic_jp": "",
+		"characteristic_kr": "",
+		"camp": "",
+		"type": "",
+		"level": 5,
+		"sex": "女",
+		"tags": [
+			""
+		],
+		"hidden": true
+	},
+	{
+		"name_cn": "波登可",
+		"name_en": "Podenco",
+		"name_jp": "",
+		"name_kr": "",
+		"characteristic_cn": "",
+		"characteristic_en": "",
+		"characteristic_jp": "",
+		"characteristic_kr": "",
+		"camp": "",
+		"type": "",
+		"level": 4,
+		"sex": "女",
+		"tags": [
+			""
+		],
+		"hidden": true
+	},
+	{
+		"name_cn": "苦艾",
+		"name_en": "Absinthe",
+		"name_jp": "",
+		"name_kr": "",
+		"characteristic_cn": "",
+		"characteristic_en": "",
+		"characteristic_jp": "",
+		"characteristic_kr": "",
+		"camp": "",
+		"type": "",
+		"level": 5,
+		"sex": "女",
+		"tags": [
+			""
+		],
+		"hidden": true
+	},
+	{
+		"name_cn": "莱恩哈特",
+		"name_en": "Leonhardt",
+		"name_jp": "",
+		"name_kr": "",
+		"characteristic_cn": "",
+		"characteristic_en": "",
+		"characteristic_jp": "",
+		"characteristic_kr": "",
+		"camp": "",
+		"type": "",
+		"level": 5,
+		"sex": "男",
+		"tags": [
+			""
+		],
+		"hidden": true
+	},
+	{
+		"name_cn": "早露",
+		"name_en": "Роса",
+		"name_jp": "",
+		"name_kr": "",
+		"characteristic_cn": "",
+		"characteristic_en": "",
+		"characteristic_jp": "",
+		"characteristic_kr": "",
+		"camp": "",
+		"type": "",
+		"level": 6,
+		"sex": "女",
+		"tags": [
+			""
+		],
+		"hidden": true
+	},
+	{
+		"name_cn": "卡达",
+		"name_en": "Click",
+		"name_jp": "",
+		"name_kr": "",
+		"characteristic_cn": "",
+		"characteristic_en": "",
+		"characteristic_jp": "",
+		"characteristic_kr": "",
+		"camp": "",
+		"type": "",
+		"level": 4,
+		"sex": "女",
+		"tags": [
+			""
+		],
+		"hidden": true
+	},
+	{
+		"name_cn": "断崖",
+		"name_en": "Ayerscarpe",
+		"name_jp": "",
+		"name_kr": "",
+		"characteristic_cn": "",
+		"characteristic_en": "",
+		"characteristic_jp": "",
+		"characteristic_kr": "",
+		"camp": "",
+		"type": "",
+		"level": 5,
+		"sex": "男",
+		"tags": [
+			""
+		],
+		"hidden": true
+	},
+	{
+		"name_cn": "亚叶",
+		"name_en": "Folinic",
+		"name_jp": "",
+		"name_kr": "",
+		"characteristic_cn": "",
+		"characteristic_en": "",
+		"characteristic_jp": "",
+		"characteristic_kr": "",
+		"camp": "",
+		"type": "",
+		"level": 5,
+		"sex": "女",
+		"tags": [
+			""
+		],
+		"hidden": true
+	},
+	{
+		"name_cn": "铃兰",
+		"name_en": "Suzuran",
+		"name_jp": "",
+		"name_kr": "",
+		"characteristic_cn": "",
+		"characteristic_en": "",
+		"characteristic_jp": "",
+		"characteristic_kr": "",
+		"camp": "",
+		"type": "",
+		"level": 6,
+		"sex": "女",
+		"tags": [
+			""
+		],
+		"hidden": true
+	},
+	{
+		"name_cn": "蜜蜡",
+		"name_en": "Beeswax",
+		"name_jp": "",
+		"name_kr": "",
+		"characteristic_cn": "",
+		"characteristic_en": "",
+		"characteristic_jp": "",
+		"characteristic_kr": "",
+		"camp": "",
+		"type": "",
+		"level": 5,
+		"sex": "女",
+		"tags": [
+			""
+		],
+		"hidden": true
+	},
+	{
+		"name_cn": "贾维",
+		"name_en": "Chiave",
+		"name_jp": "",
+		"name_kr": "",
+		"characteristic_cn": "",
+		"characteristic_en": "",
+		"characteristic_jp": "",
+		"characteristic_kr": "",
+		"camp": "",
+		"type": "",
+		"level": 5,
+		"sex": "男",
+		"tags": [
+			""
+		],
+		"hidden": true
+	},
+	{
+		"name_cn": "稀音",
+		"name_en": "Scene",
+		"name_jp": "",
+		"name_kr": "",
+		"characteristic_cn": "",
+		"characteristic_en": "",
+		"characteristic_jp": "",
+		"characteristic_kr": "",
+		"camp": "",
+		"type": "",
+		"level": 5,
+		"sex": "女",
+		"tags": [
+			""
 		],
 		"hidden": true
 	}

@@ -6,35 +6,36 @@
         var checkedTags = [];
         var checkedTagsTL = [];
 
-        if(typeof localStorage.checkedTagsCache === "undefined" || localStorage.checkedTagsCache == ""|| localStorage.checkedTagsCache == ""){
-            localStorage.setItem("checkedTagsCache", '');
-            localStorage.setItem("checkedTagsTLCache", '');
+        if(!localStorage.getItem('checkedTagsCache')){
+            localStorage.removeItem("checkedTagsCache");
+            localStorage.removeItem("checkedTagsTLCache");
         }
         var globalOptStars = [];
-        var JsonDATA = [];
+        var JsonDATA = {};
+
+    function init() {
         var tags_aval = {};
         var all_chars = {};
         var avg_char_tag = 0;
         var data1, data2, data3;
         var d0 = $.getJSON("json/tl-akhr.json", function (data) {
 
-                if(typeof localStorage.gameRegion === "undefined" || localStorage.gameRegion == ""|| localStorage.webLang == ""){
-                    localStorage.setItem("gameRegion", 'cn');
-                    localStorage.setItem("webLang", 'en');
-                    reg = "cn";
-                    lang = "en";
-                } else {
-                    reg = localStorage.gameRegion;
-                    lang = localStorage.webLang;
-                }
-                $('.reg[value='+reg+']').addClass('selected');
-                $('.lang[value='+lang+']').addClass('selected');
+            if(!localStorage.getItem('gameRegion') || !localStorage.getItem('webLang')){
+                localStorage.setItem("gameRegion", 'cn');
+                localStorage.setItem("webLang", 'en');
+            }
 
+            reg = localStorage.getItem('gameRegion');
+            lang = localStorage.getItem('webLang');
+
+            $('.reg[value='+reg+']').addClass('selected');
+            $('.lang[value='+lang+']').addClass('selected');
                 let tag_count = 0;
                 let char_tag_sum = 0;
                 // console.log(data);
                 $.each(data, function (_, char) {
                     if (char.hidden) return;
+                    if (char.globalHidden&&reg !="cn") return
                     char.tags.push(char.type);
                     if(reg == 'cn'){
                         char.tags.push(char.sex + "性干员");
@@ -71,9 +72,9 @@
                 //console.log(avg_char_tag);
                 avg_char_tag = char_tag_sum / tag_count;
 
-                JsonDATA[0] = tags_aval;
-                JsonDATA[1] = all_chars;
-                JsonDATA[2] = avg_char_tag;
+                JsonDATA.tags_aval = tags_aval;
+                JsonDATA.all_chars = all_chars;
+                JsonDATA.avg_char_tag = avg_char_tag;
             });
         var d1 = $.getJSON("json/tl-tags.json", function (data){
                     data1 = data;
@@ -84,16 +85,20 @@
         var d3 = $.getJSON("json/tl-gender.json", function (data){
                     data3 = data;
                 });
-        $.when(d0,d1,d2,d3).then(function(){
+        return $.when(d0,d1,d2,d3).then(function(){
             if(data1){
                 if(data2){
-                    JsonDATA[3] = data1;
-                    JsonDATA[4] = data2;
-                    JsonDATA[5] = data3;
+                    JsonDATA.tagsTL = data1;
+                    JsonDATA.typesTL = data2;
+                    JsonDATA.gendersTL = data3;
                 }
             }
-            $.holdReady(false);
         });
+    }
+
+        init().then(function() {
+            $.holdReady(false);
+        })
         $(document).ready(function(){
             $.getScript("js/aknav.js", function(){
                 $('#to-tag').click(function() {      // When arrow is clicked
@@ -103,43 +108,45 @@
                 });
 
                 $('.dropdown-trigger').dropdown();
-                $('[data-toggle="tooltip"]').tooltip();
+                $('[data-toggle="tooltip"]').tooltip({
+                    trigger: "hover"
+                });
 
 
-                if(localStorage.getItem('showImage') === null){
-                    localStorage.setItem("showImage", "true");
-                    localStorage.setItem("showName", "true");
+                if(!localStorage.getItem('showImage')){
+                    localStorage.setItem("showImage", JSON.stringify(true));
+                    localStorage.setItem("showName", JSON.stringify(true));
                     localStorage.setItem("size", 40);
                 } else {
-                    if(localStorage.showName == 'false'){
+                    if(!JSON.parse(localStorage.getItem('showName'))){
                         $("#showName").toggleClass("btn-primary btn-secondary");
                     }
-                    if(localStorage.showImage == 'false'){
+                    if(!JSON.parse(localStorage.getItem('showImage'))){
                         $("#showImage").toggleClass("btn-primary btn-secondary");
                     }
-                    if(localStorage.showClass == 'false'){
+                    if(!JSON.parse(localStorage.getItem('showClass'))){
                         $("#showClass").toggleClass("btn-primary btn-secondary");
                     }
                 }
-                if(!localStorage.getItem('showClass'))localStorage.setItem("showClass","false")
+                if(!localStorage.getItem('showClass'))localStorage.setItem("showClass",JSON.stringify(false))
 
-                if(typeof localStorage.gameRegion === "undefined" || localStorage.gameRegion == ""|| localStorage.webLang == ""){
+                if(!localStorage.getItem('gameRegion') || !localStorage.getItem('webLang')){
                     console.log("game region undefined");
                     localStorage.setItem("gameRegion", 'cn');
                     localStorage.setItem("webLang", 'en');
                     reg = "cn";
                     lang = "en";
                 } else {
-                    console.log("language : "+localStorage.webLang);
-                    console.log("Region : "+localStorage.gameRegion);
-                    reg = localStorage.gameRegion;
-                    lang = localStorage.webLang;
+                    console.log("language : "+localStorage.getItem('webLang'));
+                    console.log("Region : "+localStorage.getItem('gameRegion'));
+                    reg = localStorage.getItem('gameRegion');
+                    lang = localStorage.getItem('webLang');
                 }
                 $('.reg[value='+reg+']').addClass('selected');
                 $('.lang[value='+lang+']').addClass('selected');
-                if(localStorage.checkedTagsCache != ''){
-                    var checkedTagsCache = JSON.parse(localStorage.checkedTagsCache)
-                    var checkedTagsTLCache = JSON.parse(localStorage.checkedTagsTLCache)
+                if(localStorage.getItem('checkedTagsCache')){
+                    var checkedTagsCache = JSON.parse(localStorage.getItem('checkedTagsCache'))
+                    var checkedTagsTLCache = JSON.parse(localStorage.getItem('checkedTagsTLCache'))
                     if(checkedTagsCache.length != 0){
                         $.each(checkedTagsCache,function(i,v){
                             $('.button-tag').each(function(){
@@ -153,42 +160,27 @@
                     }
                 }
                 
-                console.log("Show Name: ");
-                console.log(localStorage.showName);
-                console.log("Show Image: ");
-                console.log(localStorage.showImage);
-                console.log("Show Class: ");
-                console.log(localStorage.showClass);
+                console.log("Show Name: ", JSON.parse(localStorage.getItem('showName')));
+                console.log("Show Image: ", JSON.parse(localStorage.getItem('showImage')));
+                console.log("Show Class: ", JSON.parse(localStorage.getItem('showClass')));
                 
                 var size = JSON.parse(localStorage.getItem('size'));
                 updateImageSizeDropdownList(size);
 
                 $(document).on("click", ".btn-name", function () {
-                    if(localStorage.getItem('showName') == 'false'){
-                        localStorage.setItem('showName','true');
-                    } else {
-                        localStorage.setItem('showName','false');
-                    }
-                    console.log("Show Name: ");
-                    console.log(localStorage.getItem('showName'));
+                    var showName = !JSON.parse(localStorage.getItem('showName'))
+                    localStorage.setItem('showName',JSON.stringify(showName));
+                    console.log("Show Name: ", showName);
                 })
                 $(document).on("click", ".btn-class", function () {
-                    if(localStorage.getItem('showClass') == 'false'){
-                        localStorage.setItem('showClass','true');
-                    } else {
-                        localStorage.setItem('showClass','false');
-                    }
-                    console.log("Show Class: ");
-                    console.log(localStorage.getItem('showClass'));
+                    var showClass = !JSON.parse(localStorage.getItem('showClass'))
+                    localStorage.setItem('showClass',JSON.stringify(showClass));
+                    console.log("Show Class: ", showClass);
                 })
                 $(document).on("click", ".btn-image:not(.disabled)", function () {
-                    if(localStorage.getItem('showImage') == 'false'){
-                        localStorage.showImage = 'true';
-                    } else {
-                        localStorage.showImage = 'false';
-                    }
-                    console.log("Show Image: ");
-                    console.log(localStorage.getItem('showImage'));
+                    var showImage = !JSON.parse(localStorage.getItem('showImage'))
+                    localStorage.setItem('showImage',JSON.stringify(showImage));
+                    console.log("Show Image: ", showImage);
                 });
                 changeUILanguage(true);
             });
@@ -208,15 +200,15 @@
             CheckTag($('#fastInput'),true)
          });
         function regDropdown(el){
-            localStorage.gameRegion = el.attr("value");
+            localStorage.setItem('gameRegion', el.attr("value"));
             $(".dropdown-item.reg").removeClass("selected");
             el.addClass("selected");   
             changeUILanguage(true);
         }
                     
         function langDropdown(el){
-            localStorage.webLang = el.attr("value");
-            console.log("language : "+localStorage.webLang )
+            localStorage.setItem('webLang', el.attr("value"));
+            console.log("language : "+localStorage.getItem('webLang') )
             $(".dropdown-item.lang").removeClass("selected");
             el.addClass("selected");
             changeUILanguage(true);
@@ -231,13 +223,13 @@
         function showChar(el){
             // let reg = $('.reg[value='+reg+']').attr("value");
             // let lang =$('.lang[value='+lang+']').attr("value");
-            let all_chars = JsonDATA[1];
-            let all_tags = JsonDATA[3];
-            let all_types = JsonDATA[4];
-            let all_genders = JsonDATA[5];
+            let all_chars = JsonDATA.all_chars;
+            let all_tags = JsonDATA.tagsTL;
+            let all_types = JsonDATA.typesTL;
+            let all_genders = JsonDATA.gendersTL;
             let char_name = $(el).attr('data-original-title');
 
-            // console.log(JsonDATA[1])
+            // console.log(JsonDATA.all_chars)
             
             if(reg!="cn"){
                 Object.keys(all_chars).forEach(currkey => {
@@ -254,7 +246,7 @@
             console.log("char name: "+char_name);
             $(".tr-recommd").show();
             $(".tr-chartag").remove();
-            if (localStorage.lastChar != char_name) {
+            if (localStorage.getItem('lastChar') != char_name) {
                 $(".tr-recommd:not(:contains('" + $(el).text() + "'))").hide();
                 let char = all_chars[char_name];
                 let colors = { 1: "1", 2: "2", 3: "3", 4: "4", 5: "5", 6: "6" };
@@ -272,9 +264,10 @@
                         }
                     });
                     if(!found){
+                        var showClass = JSON.parse(localStorage.getItem('showClass'))
                         $.each(all_types, function(_, alltypes){
                             if(alltypes.type_cn == tag){
-                                tagReg = alltypes['type_'+reg]+(localStorage.showClass=="true"&&reg=="cn"?"干员":"");
+                                tagReg = alltypes['type_'+reg]+(showClass&&reg=="cn"?"干员":"");
                                 tagTL = alltypes['type_'+lang];
                                 found = true;
                                 return false;
@@ -313,11 +306,13 @@
                     +"</tr>"
                 );
 
-                $('[data-toggle="tooltip"]').tooltip();
-                localStorage.lastChar = char_name
+                $('[data-toggle="tooltip"]').tooltip({
+                    trigger: "hover"
+                });
+                localStorage.setItem('lastChar', char_name)
             }else{
                 $(".tr-chartag").remove();
-                localStorage.lastChar = ""
+                localStorage.removeItem('lastChar')
                 // setTimeout(function(){
                 //     showChar(el);
                 // }, 200);
@@ -331,9 +326,9 @@
             $("#count-tag").empty()
             checkedTags = [];
             checkedTagsTL = [];
-            localStorage.checkedTagsCache = '';
-            localStorage.checkedTagsTLCache = '';
-            localStorage.lastChar = ""
+            localStorage.removeItem('checkedTagsCache');
+            localStorage.removeItem('checkedTagsTLCache');
+            localStorage.removeItem('lastChar');
         }
 
         function updateImageSizeDropdownList(size) {
@@ -347,7 +342,7 @@
                     $(this).removeClass("active");
                 }
             });
-            localStorage.size = size;
+            localStorage.setItem('size', JSON.stringify(size));
         }
 
         function changeImageSize(el){
@@ -367,36 +362,29 @@
                 if ($("#opt-all").hasClass("btn-primary")) {
                     $("#opt-all").toggleClass("btn-primary btn-secondary");
                 } else {
-                    let checkedCount = 0;
-                    $(".btn-opt").each(function (_, __) {
-                        if ($(el).attr("id") === "opt-all") return;
-                        if ($(el).hasClass("btn-primary")) checkedCount++;
-                    });
-                    // console.log("checked count:");
-                    // console.log(checkedCount);
-                    if (checkedCount === 7) $("#opt-all").toggleClass("btn-primary btn-secondary");
+                    // console.log("checked count:", checkedCount);
+                    let checkedCount = $(".btn-opt.btn-primary:not(#opt-all)").length;
+                    if (checkedCount === 6) $("#opt-all").toggleClass("btn-primary btn-secondary");
                 }
             }
             globalOptStars = [];
-            $(".btn-opt").each(function (_, __) {
-                if ($(this).attr("opt-id") === "all" || $(this).hasClass("btn-secondary")) return;
+            $(".btn-opt.btn-primary:not(#opt-id)").each(function (_, __) {
                 globalOptStars.push($(this).attr("opt-id"));
             });
             
-            // console.log("opstars:")
-            // console.log(globalOptStars);
+            // console.log("opstars:", globalOptStars);
 
             refresh();
         }
 
         function clickBtnOpt2(el){
             $(el).toggleClass("btn-primary btn-secondary");
-            localStorage.lastChar = ""
+            localStorage.removeItem('lastChar')
             refresh();
         }
         function clickBtnOpt3(el){
             $(el).toggleClass("btn-primary btn-secondary");
-            localStorage.lastChar = ""
+            localStorage.removeItem('lastChar')
             changeUILanguage(el);
         }
 
@@ -438,7 +426,7 @@
             $(el).toggleClass("btn-primary btn-secondary");
 
             if($(el).hasClass("btn-primary")){
-                let all_tags = JsonDATA[3].concat(JsonDATA[4]);
+                let all_tags = JsonDATA.tagsTL.concat(JsonDATA.typesTL);
                 var currtags = all_tags.find(search=>{
                     var checktags = search.type_cn?search.type_cn:search.tag_cn
                     if(checktags==tag) return true
@@ -476,9 +464,9 @@
                     }
                 } 
             }
-            localStorage.lastChar = ""
-            localStorage.checkedTagsCache = JSON.stringify(checkedTags);
-            localStorage.checkedTagsTLCache = JSON.stringify(checkedTagsTL);
+            localStorage.removeItem('lastChar')
+            localStorage.setItem('checkedTagsCache', JSON.stringify(checkedTags));
+            localStorage.setItem('checkedTagsTLCache', JSON.stringify(checkedTagsTL));
             calculate();
         }
 
@@ -488,10 +476,10 @@
             // console.log(JsonDATA)
             if(typeof checkedTags !== 'undefined'){
                 //console.log(JsonDATA);
-                let tags_aval = JsonDATA[0];
-                let all_chars = JsonDATA[1];
-                let avg_char_tag = JsonDATA[2];
-                let all_tags = JsonDATA[3].concat(JsonDATA[4]);
+                let tags_aval = JsonDATA.tags_aval;
+                let all_chars = JsonDATA.all_chars;
+                let avg_char_tag = JsonDATA.avg_char_tag;
+                let all_tags = JsonDATA.tagsTL.concat(JsonDATA.typesTL);
                 let len = checkedTags.length;
                 let count = Math.pow(2, checkedTags.length);
                 $("#count-tag").html(checkedTags.length>=1 ? checkedTags.length==6 ? "6 [MAX]": checkedTags.length: "")
@@ -519,9 +507,9 @@
                     
                     // let anotag = tags.map(tagextra => {
                     //     let currtag = tagextra
-                    //    if(JsonDATA[4].find(search=>search.type_cn==tagextra)){
+                    //    if(JsonDATA.typesTL.find(search=>search.type_cn==tagextra)){
                     //        console.log(tagextra)
-                    //        currtag = tagextra+(localStorage.showClass=="true"?"干员":"")
+                    //        currtag = tagextra+(JSON.parse(localStorage.getItem('showClass'))?"干员":"")
                     //    }
                     //    return currtag
                     // });
@@ -547,8 +535,7 @@
 
                     let optStars = globalOptStars;
                     if(optStars.length == 0 ){
-                        $(".btn-opt").each(function (_, __) {
-                            if ($(this).attr("opt-id") === "all" || $(this).hasClass("btn-secondary")) return;
+                        $(".btn-opt.btn-primary:not(#opt-id)").each(function (_, __) {
                             optStars.push($(this).attr("opt-id"));
                         });
                     }
@@ -594,6 +581,10 @@
                 });
                 let no = 1;
                 // console.log(combs)
+                var showName = JSON.parse(localStorage.getItem('showName'))
+                var showClass = JSON.parse(localStorage.getItem('showClass'))
+                var showImage = JSON.parse(localStorage.getItem('showImage'))
+                var size = JSON.parse(localStorage.getItem('size'))
                 $.each(combs, function (_, comb) {
                     if (comb.possible.length === 0) return;
                     let chars = comb.possible;
@@ -601,9 +592,9 @@
                     let tagsTL = comb.tagsTL
                     let anotag = tags.map(tagextra => {
                         let currtag = tagextra
-                       if(JsonDATA[4].find(search=>search.type_cn==tagextra)){
+                       if(JsonDATA.typesTL.find(search=>search.type_cn==tagextra)){
                            
-                           currtag = tagextra+(localStorage.showClass=="true"?"干员":"")
+                           currtag = tagextra+(showClass?"干员":"")
                        }
                        return currtag
                     });
@@ -614,14 +605,14 @@
                         return a.level > b.level ? -1 : (a.level < b.level ? 1 : 0);
                     });
                     $.each(chars, function (_, char) {
-                        let padding = localStorage.showName=='true' && localStorage.size <60? "padding-right: 8px" : "padding-right: 1px";
-                        let style = localStorage.showImage=='true' ? "style=\"padding: 1px 1px;" + padding + ";\" " : "";
-                        let buttonstyle = localStorage.size >25? "background-color: #AAA": "background-color: transparent";
+                        let padding = showName && size <60? "padding-right: 8px" : "padding-right: 1px";
+                        let style = showImage ? "style=\"padding: 1px 1px;" + padding + ";\" " : "";
+                        let buttonstyle = size >25? "background-color: #AAA": "background-color: transparent";
                         chars_html.push("<button type=\"button\" class=\" ak-shadow-small ak-btn btn btn-sm ak-rare-" + colors[char.level] + " btn-char my-1\" data-toggle=\"tooltip\" data-placement=\"bottom\" onclick=\"showChar(this)\" " +style+"title=\""+ char.name +"\">");
-                        if(localStorage.showImage == 'true')chars_html.push("<img style=\""+buttonstyle+"\"height=\""+localStorage.size+"\" width=\""+localStorage.size+"\" src=\"./img/chara/"+ char.name_en +".png\">   " )
-                        if(localStorage.size>60)chars_html.push("<div>")
-                        if(localStorage.showName == 'true')chars_html.push(char.name_tl)
-                        if(localStorage.size>60)chars_html.push("</div>")
+                        if(showImage)chars_html.push("<img style=\""+buttonstyle+"\"height=\""+size+"\" width=\""+size+"\" src=\"./img/chara/"+ char.name_en +".png\">   " )
+                        if(size>60)chars_html.push("<div>")
+                        if(showName)chars_html.push(char.name_tl)
+                        if(size>60)chars_html.push("</div>")
                         chars_html.push("</button>\n")
                     });
                     let tags_html = [];
@@ -638,17 +629,17 @@
                         // console.log(tags[i])
                         var currtags = all_tags.find(search=>{
                             var checkcurr
-                            if(localStorage.showClass=="true"&&search.type_cn+"干员"==tags[i]) checkcurr= true
-                            else if(localStorage.showClass=="false"&&search.type_cn==tags[i]) checkcurr= true
+                            if(showClass&&search.type_cn+"干员"==tags[i]) checkcurr= true
+                            else if(!showClass&&search.type_cn==tags[i]) checkcurr= true
                             else checkcurr = search.tag_cn==tags[i]
                             return checkcurr
                         })
                         // console.log(currtags)
                         var currtagtrailreg = reg=="cn"?"干员":reg=="jp"?"タイプ":""
                         var currtagtraillang = lang=="cn"?"干员":lang=="jp"?"タイプ":""
-                        var currtag = currtags["type_"+reg]?localStorage.showClass=="true"?currtags["type_"+reg]+currtagtrailreg:currtags["type_"+reg]
+                        var currtag = currtags["type_"+reg]?showClass?currtags["type_"+reg]+currtagtrailreg:currtags["type_"+reg]
                         :currtags["tag_"+reg]
-                        var currtagtl = currtags["type_"+lang]?localStorage.showClass=="true"?currtags["type_"+lang]+currtagtraillang:currtags["type_"+lang]
+                        var currtagtl = currtags["type_"+lang]?showClass?currtags["type_"+lang]+currtagtraillang:currtags["type_"+lang]
                         :currtags["tag_"+lang]
                         tagsTL_html.push("<button type=\"button\" class=\"btn btn-sm ak-btn btn-secondary btn-char my-1\" data-toggle=\"tooltip\" data-placement=\"right\" title=\""+ tags[i] +"\">" +
                         (currtag == currtagtl ? "" : '<a class="ak-subtitle2" style="font-size:11px;margin-left:-9px;margin-top:-15px">'+currtag+'</a>') +  currtagtl + "</button>\n")
@@ -657,7 +648,9 @@
                         "<tr class=\"tr-recommd\"><td>" + no++ + "</td><td>" + tagsTL_html.join("") + "</td><td>" + chars_html.join("") +
                         "</td>"+""+"</tr>"
                     );
-                    $('[data-toggle="tooltip"]').tooltip();
+                });
+                $('[data-toggle="tooltip"]').tooltip({
+                    trigger: "hover"
                 });
             }
         }
@@ -670,24 +663,27 @@
 
             console.log(currsearch)
             if(currsearch){
-                let all_tags = JsonDATA[3].concat(JsonDATA[4]);
-                var allsearch = []
-                all_tags.forEach(element => {
-                    Object.keys(element).forEach(searchkey => {
-                        if(element[searchkey].toLowerCase().includes(currsearch.toLowerCase())){
-                            if(!allsearch.find(search=>search[1]==element)){
-                                allsearch.push([element[searchkey],element])
+                let all_tags = JsonDATA.tagsTL.concat(JsonDATA.typesTL);
+                var allsearch = all_tags.reduce((acc, element) => {
+                    Object.entries(element).forEach(([k,v]) => {
+                        if(/(type|tag)_(cn|en|kr|jp)/.test(k) && v.toLowerCase().includes(currsearch.toLowerCase())){
+                            if (!acc.some(search=>search[1]==element)) {
+                                acc.push([v, element]);
                             }
                         }
                     });
-                });
+                    return acc;
+                }, []);
                 if(isenter){
-                    console.log(allsearch[0])
-                    var currtag = allsearch[0][1]['tag_'+lang]?allsearch[0][1]['tag_'+lang]:allsearch[0][1]['type_'+lang]
-                    console.log(`button[data-original-title='${currtag}']`)
-                    console.log($(`button[data-original-title='${currtag}']`))
-                    clickBtnTag($(`button[data-original-title='${currtag}']`)[0])
-                    $('#fastInput').val("")
+                    if (allsearch.length > 0) {
+                        let firstTag = allsearch[0][1];
+                        console.log(firstTag)
+                        var currtag = firstTag['tag_'+lang]?firstTag['tag_'+lang]:firstTag['type_'+lang]
+                        console.log(`button[data-original-title='${currtag}']`)
+                        console.log($(`button[data-original-title='${currtag}']`))
+                        clickBtnTag($(`button[data-original-title='${currtag}']`)[0])
+                        $('#fastInput').val("")
+                    }
                 }else{
                     console.log(allsearch)
                 }
@@ -698,8 +694,8 @@
         
 
         function changeUILanguage(calc=false){
-            reg = localStorage.gameRegion;
-            lang = localStorage.webLang;
+            reg = localStorage.getItem('gameRegion');
+            lang = localStorage.getItem('webLang');
             
             console.log(lang)
             console.log(reg)
@@ -716,7 +712,7 @@
             let types = ["qualifications","position","affix"];
             for (let m = 0; m < types.length; m++) {
                 $(".tags-"+types[m]).each(function(j,el){
-                    getJSONdata("tags",function(data){
+                    let data = JsonDATA.tagsTL
                         if(data.length != 0){
                             let k = 0;
                             for (var i = 0; i < data.length; i++) {
@@ -730,11 +726,10 @@
                                 }
                             }
                         }
-                    });
                 });
             }
             $(".tags-gender").each(function(i,el){
-                getJSONdata("gender",function(data){
+                let data = JsonDATA.gendersTL
                     if(data.length != 0){
                         if(reg == 'cn'){
                             $(el).html(data[i]["sex_"+reg]+'性干员');
@@ -743,15 +738,14 @@
                         }
                         $(el).attr("data-original-title", data[i]["sex_"+lang]);
                     }
-                });
             });
+            var showClass = JSON.parse(localStorage.getItem('showClass'))
             $(".tags-class").each(function(i,el){
-                getJSONdata("type",function(data){
+                let data = JsonDATA.typesTL
                     if(data.length != 0){
-                        $(el).html(data[i]["type_"+reg]+(localStorage.showClass=="true"?reg=='cn'?'干员':reg=='jp'?"タイプ":"":""));
                         $(el).attr("data-original-title", data[i]["type_"+lang]);
                     }
-                });
+                    $(el).html(data[i]["type_"+reg]+(showClass?reg=='cn'?'干员':reg=='jp'?"タイプ":"":""));
             });
             getJSONdata("ui",function(data){
                 if(data.length != 0){
@@ -785,84 +779,7 @@
         }
 
         function refresh(calc=true){
-            
-            if(typeof localStorage.gameRegion === "undefined" || localStorage.gameRegion == ""|| localStorage.webLang == ""){
-                localStorage.setItem("gameRegion", 'cn');
-                localStorage.setItem("webLang", 'en');
-                reg = "cn";
-                lang = "en";
-            } else {
-                reg = localStorage.gameRegion;
-                lang = localStorage.webLang;
-            }
-            $('.reg[value='+reg+']').addClass('selected');
-            $('.lang[value='+lang+']').addClass('selected');
-            tags_aval = {};
-            var d0 = $.getJSON("json/tl-akhr.json", function (data) {
-                let tag_count = 0;
-                let char_tag_sum = 0;
-                $.each(data, function (_, char) {
-                    if (char.hidden) return;
-                    if (char.globalHidden&&reg !="cn") return
-                    char.tags.push(char.type);
-                    // console.log(reg)
-                    if(reg == 'cn'){
-                        char.tags.push(char.sex + "性干员");
-                    } else {
-                        char.tags.push(char.sex);
-                    }
-
-                    $.each(char.tags, function (_, tag) {
-                        if (tag in tags_aval) {
-                            tags_aval[tag].push({ 
-                                "name_en": char.name_en, 
-                                "name": char['name_'+reg],
-                                "name_tl": char['name_'+lang],
-                                "level": char.level, 
-                                "type": char.type });
-                        } else {
-                            tags_aval[tag] = [{ 
-                                "name_en": char.name_en, 
-                                "name": char['name_'+reg], 
-                                "name_tl": char['name_'+lang],
-                                "level": char.level, 
-                                "type": char.type }];
-                                tag_count++;
-                        }
-                        char_tag_sum++;
-                    });
-                    all_chars[char.name_cn] = { 'name_cn': char.name_cn, 'name_en': char.name_en, 'name_jp': char.name_jp, 'name_kr': char.name_kr, 'level': char.level, 'tags': char.tags, 'globalHidden' : char.globalHidden?char.globalHidden:false };
-                });
-                //$.each(tags_aval, function (key, _) {
-                //    $("#box-tags").append(
-                //        "<button type=\"button\" class=\"btn btn-sm btn-secondary btn-tag my-1\">" + key + "</button>\n"
-                //    );
-                //    tag_count++;
-                //});
-                //console.log(avg_char_tag);
-                avg_char_tag = char_tag_sum / tag_count;
-
-                JsonDATA[0] = tags_aval;
-                JsonDATA[1] = all_chars;
-                JsonDATA[2] = avg_char_tag;
-            });
-            var d1 = $.getJSON("json/tl-tags.json", function (data){
-                        data1 = data;
-                    });
-            var d2 = $.getJSON("json/tl-type.json", function (data){
-                        data2 = data;
-                    });
-            var d3 = $.getJSON("json/tl-gender.json", function (data){
-                        data3 = data;
-                    });
-            $.when(d0,d1,d2,d3).then(function(){
-                if(data1){
-                    if(data2){
-                        JsonDATA[3] = data1;
-                        JsonDATA[4] = data2;
-                        JsonDATA[5] = data3;
-                    }
-                }
+            init().then(function() {
                 if(calc){
                     calculate();
                     

@@ -7,13 +7,13 @@
     <meta name="theme-color" content="#222222ff">
     <title>Arknights Material Inventory</title>
     <link rel="manifest" href="./manifest.json" crossorigin="use-credentials">
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css'>
     <link rel="stylesheet" href="css/ak.css">
     <script src="js/multilingual.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <script src='https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
-    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js'></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159317757-1"></script>
     <script>
@@ -24,6 +24,27 @@
     </script>
 </head>
 <body>
+    <div id="loadingOverlay" style="width: 100vw; height: 150%; background-color: #111111; position: absolute; z-index: 9999; top:0px;">
+        <div class="d-flex justify-content-center" style="margin-top: 50vh">
+            <div class="spinner-border" role="status" style="border-color: #0098DC; border-right-color: transparent; width: 4rem; height: 4rem;">
+            </div>
+        </div>
+        <div style="width: 100%; text-align: center; margin-top: 13px;">
+            <div class='loadtext'>Loading Toolbox</div>
+            <div></div>
+            <div class="loadforce" onclick="hideload()"><a>Click here if stuck on loading</a></div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+          $('#nav-placeholder').load('nav.html');
+        });
+        $(window).on("load", function () {
+            setTimeout(function () {
+                $("#loadingOverlay").fadeOut(); 
+            }, 1000);
+        });
+    </script>
     <!-- <button class="btn btn-sm btn-primary goToTag" style="position:fixed;bottom:15px ;right: 0px;size:70px 70px;padding: 10px;z-index: 10000" id="to-tag" type="button">^ </button> -->
     <nav id="aknav" class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" style="background-image: linear-gradient(#222222ff 70%,#222222ff , #111111aa );">
             <img src="./img/factions/logo_rhodes.png" width="40" height="40" style="transform:scale(1.2,1.2)translate(-8px,1px)"class="d-inline-block align-top" alt="">
@@ -33,6 +54,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
     </nav>
+    <div id='acedonate'></div>
     <div style="padding-bottom:50px"></div>
 
     <button class="btn btn-sm ak-ontop-button" style="position:fixed;bottom:60px ;right: 0px;size:70px 70px;padding: 4px;z-index: 10000" id="btn-filter" type="button">Filter </button>
@@ -97,14 +119,10 @@
     <hr />
     <div class="row col-12 ak-footer">
         <div class="col-12 text-center">
-            <p>Forked from <a href = "https://graueneko.github.io/akhr.html">grauneko web</a></p>
+            <p>This module was originally forked from <a href = "https://graueneko.github.io/akhr.html">Graueneko web</a></p>
         <div class="col-12 text-center"></div>
-            <p>Last update: 12 May 2019, <a href="https://github.com/Aceship/AN-EN-Tags/issues">Contact</a></p>
-            <p>
-                Data source:
-                <a href="http://wiki.joyme.com/arknights/%E5%B9%B2%E5%91%98%E6%95%B0%E6%8D%AE%E8%A1%A8">Arknights Wiki (CN)</a>
-            </p>
-            <p>Powered by GraueNeko, Aceship, Faryzal2020</p>
+            <p><a href="https://github.com/Aceship/AN-EN-Tags/issues">Bug Report and Suggestions</a></p>
+            <p>Developed and Maintained by: Aceship and Faryzal2020</p>
         </div>
     </div>
     <script src='js/arrive.min.js'></script>
@@ -121,15 +139,15 @@
         let allns = []; let allhs = []; let allos = [];
 
         $(document).ready(function(){
-            if(typeof localStorage.gameRegion === "undefined" || localStorage.gameRegion == ""|| localStorage.webLang == ""){
+            if(!localStorage.getItem('gameRegion') || !localStorage.getItem('webLang')){
                 console.log("game region undefined");
                 localStorage.setItem("gameRegion", 'cn');
                 localStorage.setItem("webLang", 'en');
                 reg = "cn";
                 lang = "en";
             } else {
-                reg = localStorage.gameRegion;
-                lang = localStorage.webLang;
+                reg = localStorage.getItem('gameRegion');
+                lang = localStorage.getItem('webLang');
             }
             $('.reg[value='+reg+']').addClass('selected');
             $('.lang[value='+lang+']').addClass('selected');
@@ -272,14 +290,14 @@
             
 
             function regDropdown(el){
-                localStorage.gameRegion = el.attr("value");
+                localStorage.setItem('gameRegion', el.attr("value"));
                 $(".dropdown-item.reg").removeClass("selected");
                 el.addClass("selected");   
                 changeUILanguage();
             }
                         
             function langDropdown(el){
-                localStorage.webLang = el.attr("value");
+                localStorage.setItem('webLang', el.attr("value"));
                 $(".dropdown-item.lang").removeClass("selected");
                 el.addClass("selected");
                 changeUILanguage();
@@ -324,13 +342,13 @@
                             if(srcHtml!=""){
                                 isOnStage = ""
                                 +     '<div class="card-body p-1 ak-c-black" style="padding:0px">'  
-                                +         '<a class="ak-subtitle2">Drop location :</a>'                  
+                                +         '<a class="ak-subtitle2 medium">Drop location :</a>'                  
                                 +         srcHtml.join("<br />")
                                 +     '</div>'
                             }else{
                                 isOnStage = ""
                                 +     '<div class="card-body p-1 ak-c-black" style="padding:0px">'  
-                                +         '<a class="ak-subtitle2">Only Craftable</a>'                  
+                                +         '<a class="ak-subtitle2 medium">Only Craftable</a>'                  
                                 +         srcHtml.join("<br />")
                                 +     '</div>'
                             }

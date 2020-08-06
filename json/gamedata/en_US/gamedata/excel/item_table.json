@@ -87,6 +87,10 @@
           "occPer": "ALWAYS"
         },
         {
+          "stageId": "sub_06-2-2",
+          "occPer": "ALWAYS"
+        },
+        {
           "stageId": "sub_04-2-3",
           "occPer": "ALWAYS"
         },
@@ -286,6 +290,10 @@
           "occPer": "ALWAYS"
         },
         {
+          "stageId": "sub_06-1-1",
+          "occPer": "ALWAYS"
+        },
+        {
           "stageId": "sub_04-3-3",
           "occPer": "ALWAYS"
         },
@@ -304,7 +312,7 @@
     "2004": {
       "itemId": "2004",
       "name": "Strategic Battle Record",
-      "description": "In such a hostile environment, every operation has the potential for a loss of life. We may be able to save more people if we are well prepared.\nIncluding an edited copy, plus an HD version, a UHD remastered version, a copy of the HD version, a director's cut, a deluxe version...",
+      "description": "In such a hostile environment, every operation has the potential for a loss of life. We may be able to save more people if we are well prepared.\nComes with a collector's edition, a HD version, an HD remastered version, an Enhanced edition, a Director's cut edition, an Annual Gold edition...",
       "rarity": 4,
       "iconId": "sprite_exp_card_t4",
       "overrideBkg": null,
@@ -471,6 +479,10 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act6d5_03",
+          "occPer": "ALWAYS"
+        },
+        {
           "stageId": "main_01-07",
           "occPer": "ALWAYS"
         },
@@ -481,6 +493,10 @@
         {
           "stageId": "main_05-10",
           "occPer": "USUAL"
+        },
+        {
+          "stageId": "sub_06-1-2",
+          "occPer": "ALWAYS"
         },
         {
           "stageId": "sub_05-1-1",
@@ -519,6 +535,10 @@
         {
           "stageId": "main_05-01",
           "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_06-05",
+          "occPer": "USUAL"
         }
       ],
       "buildingProductList": [
@@ -598,7 +618,15 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act6d5_05",
+          "occPer": "ALMOST"
+        },
+        {
           "stageId": "main_01-12",
+          "occPer": "USUAL"
+        },
+        {
+          "stageId": "main_06-10",
           "occPer": "USUAL"
         },
         {
@@ -642,6 +670,10 @@
         {
           "stageId": "main_05-10",
           "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_06-14",
+          "occPer": "OFTEN"
         }
       ],
       "buildingProductList": [
@@ -654,7 +686,7 @@
     "30064": {
       "itemId": "30064",
       "name": "Optimized Device",
-      "description": "This version has been completely modified and thus the capacity has been significantly increased at the price of stability. You can feel the craftsman's passion and enthusiasm through his modifications to this device...",
+      "description": "After undergoing a large number of private modifications, these devices have greatly expanded capacity, which improves performance at the cost of stability. From this, one can feel the dedication and perseverance from the makers.",
       "rarity": 3,
       "iconId": "MTL_SL_BOSS4",
       "overrideBkg": null,
@@ -692,15 +724,19 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act6d5_01",
+          "occPer": "ALWAYS"
+        },
+        {
           "stageId": "a001_01",
           "occPer": "ALWAYS"
         },
         {
-          "stageId": "sub_02-07",
+          "stageId": "main_00-11",
           "occPer": "ALWAYS"
         },
         {
-          "stageId": "main_00-11",
+          "stageId": "sub_02-07",
           "occPer": "ALWAYS"
         }
       ],
@@ -727,6 +763,14 @@
         {
           "stageId": "main_01-08",
           "occPer": "ALMOST"
+        },
+        {
+          "stageId": "main_06-05",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_06-08",
+          "occPer": "ALWAYS"
         },
         {
           "stageId": "sub_03-1-2",
@@ -773,6 +817,10 @@
         {
           "stageId": "main_05-03",
           "occPer": "USUAL"
+        },
+        {
+          "stageId": "main_06-04",
+          "occPer": "OFTEN"
         }
       ],
       "buildingProductList": [
@@ -798,6 +846,10 @@
       "stageDropList": [
         {
           "stageId": "main_03-08",
+          "occPer": "SOMETIMES"
+        },
+        {
+          "stageId": "main_06-04",
           "occPer": "SOMETIMES"
         }
       ],
@@ -844,7 +896,7 @@
     "30022": {
       "itemId": "30022",
       "name": "Sugar",
-      "description": "Sugar made from natural materials. It's a bit expensive, but its flavor, well... it makes you feel good. P.S. It's not a snack.",
+      "description": "A more expensive sugar made from natural materials. Ahh, this taste… will surely put one in a great mood. However, it’s not for casual snacking.",
       "rarity": 1,
       "iconId": "MTL_SL_STRG2",
       "overrideBkg": null,
@@ -855,6 +907,10 @@
       "classifyType": "MATERIAL",
       "itemType": "MATERIAL",
       "stageDropList": [
+        {
+          "stageId": "act6d5_04",
+          "occPer": "ALWAYS"
+        },
         {
           "stageId": "a001_03",
           "occPer": "USUAL"
@@ -907,6 +963,10 @@
         },
         {
           "stageId": "main_05-02",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_06-03",
           "occPer": "OFTEN"
         }
       ],
@@ -962,12 +1022,16 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
-          "stageId": "main_01-03",
-          "occPer": "ALMOST"
+          "stageId": "act6d5_02",
+          "occPer": "ALWAYS"
         },
         {
           "stageId": "sub_02-08",
           "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "main_01-03",
+          "occPer": "ALMOST"
         }
       ],
       "buildingProductList": []
@@ -1003,6 +1067,10 @@
           "occPer": "USUAL"
         },
         {
+          "stageId": "main_06-01",
+          "occPer": "ALMOST"
+        },
+        {
           "stageId": "sub_03-2-1",
           "occPer": "ALWAYS"
         }
@@ -1034,6 +1102,10 @@
         },
         {
           "stageId": "main_05-05",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_06-09",
           "occPer": "OFTEN"
         },
         {
@@ -1132,6 +1204,14 @@
         {
           "stageId": "main_03-07",
           "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "main_06-14",
+          "occPer": "USUAL"
+        },
+        {
+          "stageId": "sub_06-2-1",
+          "occPer": "ALMOST"
         }
       ],
       "buildingProductList": [
@@ -1156,6 +1236,10 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act6d5_06",
+          "occPer": "OFTEN"
+        },
+        {
           "stageId": "main_03-01",
           "occPer": "OFTEN"
         },
@@ -1165,6 +1249,10 @@
         },
         {
           "stageId": "main_05-08",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_06-07",
           "occPer": "OFTEN"
         }
       ],
@@ -1220,6 +1308,10 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act6d5_07",
+          "occPer": "OFTEN"
+        },
+        {
           "stageId": "a001_05",
           "occPer": "USUAL"
         },
@@ -1234,6 +1326,10 @@
         {
           "stageId": "main_05-04",
           "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_06-10",
+          "occPer": "USUAL"
         }
       ],
       "buildingProductList": []
@@ -1289,6 +1385,10 @@
         {
           "stageId": "main_05-06",
           "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_06-02",
+          "occPer": "OFTEN"
         }
       ],
       "buildingProductList": []
@@ -1309,6 +1409,10 @@
       "stageDropList": [
         {
           "stageId": "main_04-07",
+          "occPer": "SOMETIMES"
+        },
+        {
+          "stageId": "main_06-02",
           "occPer": "SOMETIMES"
         }
       ],
@@ -1334,6 +1438,10 @@
       "itemType": "MATERIAL",
       "stageDropList": [
         {
+          "stageId": "act6d5_08",
+          "occPer": "OFTEN"
+        },
+        {
           "stageId": "a001_06",
           "occPer": "OFTEN"
         },
@@ -1347,6 +1455,10 @@
         },
         {
           "stageId": "main_05-07",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_06-12",
           "occPer": "OFTEN"
         }
       ],
@@ -1403,6 +1515,10 @@
         {
           "stageId": "main_05-09",
           "occPer": "OFTEN"
+        },
+        {
+          "stageId": "main_06-13",
+          "occPer": "OFTEN"
         }
       ],
       "buildingProductList": []
@@ -1423,6 +1539,10 @@
       "stageDropList": [
         {
           "stageId": "main_04-09",
+          "occPer": "SOMETIMES"
+        },
+        {
+          "stageId": "main_06-13",
           "occPer": "SOMETIMES"
         }
       ],
@@ -1493,6 +1613,116 @@
         {
           "roomType": "WORKSHOP",
           "formulaId": "12"
+        }
+      ]
+    },
+    "31013": {
+      "itemId": "31013",
+      "name": "Coagulating Gel",
+      "description": "An artificial material serendipitously born in the laboratory. It has excellent resistance to extreme temperatures, is lightweight, and is easy to process, making it ideal for use in high-tech projects.",
+      "rarity": 2,
+      "iconId": "MTL_SL_PGEL3",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 100037,
+      "usage": "A high-strength plastic material suitable. Can be used for a variety of upgrades and for synthesis projects in Factories.",
+      "obtainApproach": null,
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [
+        {
+          "stageId": "sub_04-4-1",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "sub_05-4-1",
+          "occPer": "OFTEN"
+        }
+      ],
+      "buildingProductList": []
+    },
+    "31014": {
+      "itemId": "31014",
+      "name": "Polymerized Gel",
+      "description": "An artificial material created from a large number of experiments using coagulating gel as a base material. It can maintain its stability even in high-pressure environments, playing a key role in some high-tech projects.",
+      "rarity": 3,
+      "iconId": "MTL_SL_PGEL4",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 100036,
+      "usage": "An extremely high-strength plastic material. Can be used for a variety of upgrades.",
+      "obtainApproach": null,
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [
+        {
+          "stageId": "sub_05-4-1",
+          "occPer": "SOMETIMES"
+        }
+      ],
+      "buildingProductList": [
+        {
+          "roomType": "WORKSHOP",
+          "formulaId": "56"
+        }
+      ]
+    },
+    "31023": {
+      "itemId": "31023",
+      "name": "Incandescent Alloy",
+      "description": "An alloy smelted from several rare Terran metals. Used to manufacture rare electronic components and circuit boards, it has become an indispensable material in the cutting-edge electronics industry.",
+      "rarity": 2,
+      "iconId": "MTL_SL_IAM3",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 100039,
+      "usage": "A special alloy with a high melting point, commonly used in the electronics industry. Can be used for a variety of upgrades and for synthesis projects in Factories.",
+      "obtainApproach": null,
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [
+        {
+          "stageId": "main_06-11",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "sub_03-3-1",
+          "occPer": "OFTEN"
+        },
+        {
+          "stageId": "sub_05-4-2",
+          "occPer": "OFTEN"
+        }
+      ],
+      "buildingProductList": []
+    },
+    "31024": {
+      "itemId": "31024",
+      "name": "Incandescent Alloy Block",
+      "description": "A product derived from further processing of incandescent alloy. After complicated industrial processing, the stability of its solid-liquid hybridization state at certain temperatures has been preserved. As a result, it has an irreplaceable role in product development in the cutting-edge electronics industry.",
+      "rarity": 3,
+      "iconId": "MTL_SL_IAM4",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 100038,
+      "usage": "A rarely-produced alloy with a high melting point, commonly used in the electronics industry. Can be used for a variety of upgrades.",
+      "obtainApproach": null,
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [
+        {
+          "stageId": "main_06-11",
+          "occPer": "SOMETIMES"
+        },
+        {
+          "stageId": "sub_05-4-2",
+          "occPer": "SOMETIMES"
+        }
+      ],
+      "buildingProductList": [
+        {
+          "roomType": "WORKSHOP",
+          "formulaId": "55"
         }
       ]
     },
@@ -3976,6 +4206,54 @@
       "stageDropList": [],
       "buildingProductList": []
     },
+    "p_char_298_susuro": {
+      "itemId": "p_char_298_susuro",
+      "name": "Sussurro's Token",
+      "description": "A diary made from soft paper. Whether the words record the past or the future, it will always be there as long as it's recorded, right?",
+      "rarity": 3,
+      "iconId": "p_char_298_susuro",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 800028,
+      "usage": "Used to improve the Potential of Sussurro.",
+      "obtainApproach": "New Operator's gift",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_260_durnar": {
+      "itemId": "p_char_260_durnar",
+      "name": "Dur-nar's Token",
+      "description": "An abandoned electric blade. One must first understand loss to understand what it means to treasure something.",
+      "rarity": 3,
+      "iconId": "p_char_260_durnar",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 800029,
+      "usage": "Used to improve the Potential of Dur-nar.",
+      "obtainApproach": "New Operator's gift",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_355_ethan": {
+      "itemId": "p_char_355_ethan",
+      "name": "Ethan's Token",
+      "description": "A metallic yo-yo. Be careful not to hit bystanders when playing with it.",
+      "rarity": 3,
+      "iconId": "p_char_355_ethan",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 800030,
+      "usage": "Used to improve the Potential of Ethan.",
+      "obtainApproach": "New Operator's gift",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
     "p_char_190_clour": {
       "itemId": "p_char_190_clour",
       "name": "Vermeil's Token",
@@ -3986,6 +4264,38 @@
       "stackIconId": null,
       "sortId": 800031,
       "usage": "Used to improve the Potential of Vermeil.",
+      "obtainApproach": "New Operator's gift",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_133_mm": {
+      "itemId": "p_char_133_mm",
+      "name": "May's Token",
+      "description": "It's not clear where this taser came from. It can be grouped with May's other commonly-used weapons.",
+      "rarity": 3,
+      "iconId": "p_char_133_mm",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 800032,
+      "usage": "Used to improve the Potential of May.",
+      "obtainApproach": "New Operator's gift",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_302_glaze": {
+      "itemId": "p_char_302_glaze",
+      "name": "Ambriel's Token",
+      "description": "A mirror with exquisite craftsmanship. It is easy to carry, letting you make sure that your hair isn't getting messed up in the heat of battle.",
+      "rarity": 3,
+      "iconId": "p_char_302_glaze",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 800033,
+      "usage": "Used to improve the Potential of Ambriel.",
       "obtainApproach": "New Operator's gift",
       "classifyType": "MATERIAL",
       "itemType": "MATERIAL",
@@ -4504,6 +4814,54 @@
       "stageDropList": [],
       "buildingProductList": []
     },
+    "p_char_348_ceylon": {
+      "itemId": "p_char_348_ceylon",
+      "name": "Ceylon's Token",
+      "description": "A notebook with no more space to write. Here one finds all extant knowledge on Originium research. It's so detailed that it could be published as a book titled Originium Research: From Basics to Mastery.",
+      "rarity": 4,
+      "iconId": "p_char_348_ceylon",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700033,
+      "usage": "Used to improve the Potential of Ceylon.",
+      "obtainApproach": "New Operator's gift",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_326_glacus": {
+      "itemId": "p_char_326_glacus",
+      "name": "Glaucus's Token",
+      "description": "A dead battery. The final purpose of a useless item is to be part of a collection.",
+      "rarity": 4,
+      "iconId": "p_char_326_glacus",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700034,
+      "usage": "Used to improve the Potential of Glaucus.",
+      "obtainApproach": "New Operator's gift",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_275_breeze": {
+      "itemId": "p_char_275_breeze",
+      "name": "Breeze's Token",
+      "description": "A family seal that has been wiped down so many times that its pattern is fading, still polished and shining impeccably.",
+      "rarity": 4,
+      "iconId": "p_char_275_breeze",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700035,
+      "usage": "Used to improve the Potential of Breeze.",
+      "obtainApproach": "New Operator's gift",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
     "p_char_131_flameb": {
       "itemId": "p_char_131_flameb",
       "name": "Flamebringer's Token",
@@ -4530,6 +4888,118 @@
       "stackIconId": null,
       "sortId": 700037,
       "usage": "Used to improve the Potential of Executor.",
+      "obtainApproach": "New Operator's gift",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_261_sddrag": {
+      "itemId": "p_char_261_sddrag",
+      "name": "Reed's Token",
+      "description": "A short poem written on diary paper. The handwriting is beautiful and delicate, but the words are painful and harrowing.",
+      "rarity": 4,
+      "iconId": "p_char_261_sddrag",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700038,
+      "usage": "Used to improve the Potential of Reed.",
+      "obtainApproach": "New Operator's gift",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_356_broca": {
+      "itemId": "p_char_356_broca",
+      "name": "Broca's Token",
+      "description": "An exquisite miniature landscape model of an ancient Siracusan city. Someone stealthily placed it on your desk at some point, and you didn't discover it until you showed up for work the next day.",
+      "rarity": 4,
+      "iconId": "p_char_356_broca",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700039,
+      "usage": "Used to improve the Potential of Broca.",
+      "obtainApproach": "New Operator's gift",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_243_waaifu": {
+      "itemId": "p_char_243_waaifu",
+      "name": "Waai Fu's Token",
+      "description": "An old martial arts scroll written in an undiscernable text. At least it'll have some value as a reference material… right?",
+      "rarity": 4,
+      "iconId": "p_char_243_waaifu",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700040,
+      "usage": "Used to improve the Potential of Waai Fu.",
+      "obtainApproach": "New Operator's gift",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_325_bison": {
+      "itemId": "p_char_325_bison",
+      "name": "Bison's Token",
+      "description": "A weathered map. The traces of countless miles of voyages are clearly visible, where new plans interweave with past markings. This is the life of a Messenger.",
+      "rarity": 4,
+      "iconId": "p_char_325_bison",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700041,
+      "usage": "Used to improve the Potential of Bison.",
+      "obtainApproach": "New Operator's gift",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_367_swllow": {
+      "itemId": "p_char_367_swllow",
+      "name": "GreyThroat's Token",
+      "description": "A broken scalpel, the father's memento. It is difficult to imagine that a doctor who did so much to help the Infected would end up suffering so much torment.",
+      "rarity": 4,
+      "iconId": "p_char_367_swllow",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700042,
+      "usage": "Used to improve the Potential of GreyThroat.",
+      "obtainApproach": "New Operator's gift",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_226_hmau": {
+      "itemId": "p_char_226_hmau",
+      "name": "Hung's Token",
+      "description": "A self-authored and compiled cookbook. Its recipes are suitable for any season, featuring dishes that are both easy-to-make and delicious.",
+      "rarity": 4,
+      "iconId": "p_char_226_hmau",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700043,
+      "usage": "Used to improve the Potential of Hung.",
+      "obtainApproach": "New Operator's gift",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_383_snsant": {
+      "itemId": "p_char_383_snsant",
+      "name": "Snowsant's Token",
+      "description": "A hand-sewn purse that contains small coins no longer in circulation.",
+      "rarity": 4,
+      "iconId": "p_char_383_snsant",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 700044,
+      "usage": "Used to improve the Potential of Snowsant.",
       "obtainApproach": "New Operator's gift",
       "classifyType": "MATERIAL",
       "itemType": "MATERIAL",
@@ -4728,6 +5198,22 @@
       "stageDropList": [],
       "buildingProductList": []
     },
+    "p_char_340_shwaz": {
+      "itemId": "p_char_340_shwaz",
+      "name": "Schwarz's Token",
+      "description": "A crossbow. Well maintained and easy to use. But the tiny scratches and dents on it provide some insight into all the killing it has done.",
+      "rarity": 5,
+      "iconId": "p_char_340_shwaz",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 600013,
+      "usage": "Used to improve the Potential of Schwarz.",
+      "obtainApproach": "New Operator's gift",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
     "p_char_188_helage": {
       "itemId": "p_char_188_helage",
       "name": "Hellagur's Token",
@@ -4754,6 +5240,70 @@
       "stackIconId": null,
       "sortId": 600015,
       "usage": "Used to improve the Potential of Magallan.",
+      "obtainApproach": "New Operator's gift",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_213_mostma": {
+      "itemId": "p_char_213_mostma",
+      "name": "Mostima's Token",
+      "description": "It's her blunderbuss. She doesn't need it anymore.",
+      "rarity": 5,
+      "iconId": "p_char_213_mostma",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 600016,
+      "usage": "Used to improve the Potential of Mostima.",
+      "obtainApproach": "New Operator's gift",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_225_haak": {
+      "itemId": "p_char_225_haak",
+      "name": "Aak's Token",
+      "description": "A bottle filled with 6 different-colored pills. No instructions are provided.",
+      "rarity": 5,
+      "iconId": "p_char_225_haak",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 600017,
+      "usage": "Used to improve the Potential of Aak.",
+      "obtainApproach": "New Operator's gift",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_2014_nian": {
+      "itemId": "p_char_2014_nian",
+      "name": "Nian's Token",
+      "description": "A simple, antique dagger. Legend holds that if this dagger is ever lifted with an intent to murder, the blade will disappear.",
+      "rarity": 5,
+      "iconId": "p_char_2014_nian",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 600018,
+      "usage": "Used to improve the Potential of Nian.",
+      "obtainApproach": "New Operator's gift",
+      "classifyType": "MATERIAL",
+      "itemType": "MATERIAL",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "p_char_017_huang": {
+      "itemId": "p_char_017_huang",
+      "name": "Blaze's Token",
+      "description": "A glass bottle with hard-to-discern contents inside. After being shaken a few times, the bottle heats up, making it perfect for keeping one's hands warm in the winter.",
+      "rarity": 5,
+      "iconId": "p_char_017_huang",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 600019,
+      "usage": "Used to improve the Potential of Blaze.",
       "obtainApproach": "New Operator's gift",
       "classifyType": "MATERIAL",
       "itemType": "MATERIAL",
@@ -4939,7 +5489,7 @@
     "ap_item_SEC_60": {
       "itemId": "ap_item_SEC_60",
       "name": "Salted Egg Yolk Flavor Chocolate",
-      "description": "No one knows when or why salted egg yolk flavored food became so insanely popular. But it can be found in everything, everywhere. It's just... irresistible.",
+      "description": "I'm not sure when it first started, but ever since that time, the salted egg yolk-flavored food craze has swept the world. It's as if everywhere I look is salted egg yolk. I try to my avert my eyes, but nothing but salted egg yolk awaits me. All of this makes me... unable to refuse.",
       "rarity": 4,
       "iconId": "ap_item_SEC_60",
       "overrideBkg": null,
@@ -5009,6 +5559,22 @@
       ],
       "buildingProductList": []
     },
+    "ap_supply_lt_010": {
+      "itemId": "ap_supply_lt_010",
+      "name": "Emergency Sanity Sampler",
+      "description": "This trial product contains only a small dose, so please take that into consideration when using. If you are satisfied with the efficacy of this product, please consider one of our larger combination packs.",
+      "rarity": 4,
+      "iconId": "ap_supply_lt_10",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 50004,
+      "usage": "A portable , easy-to-carry sampler that is good for maintaining a level of Sanity during emergencies.",
+      "obtainApproach": "Event Stages",
+      "classifyType": "CONSUME",
+      "itemType": "AP_SUPPLY",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
     "ap_supply_lt_60": {
       "itemId": "ap_supply_lt_60",
       "name": "Emergency Sanity Potion",
@@ -5017,7 +5583,7 @@
       "iconId": "ap_supply_lt_60",
       "overrideBkg": null,
       "stackIconId": null,
-      "sortId": 30003,
+      "sortId": 50003,
       "usage": "An emergency supplement used to maintain Sanity and keep your mind clear.",
       "obtainApproach": "Monthly Card reward, Gift",
       "classifyType": "CONSUME",
@@ -5033,7 +5599,7 @@
       "iconId": "ap_supply_lt_100",
       "overrideBkg": null,
       "stackIconId": null,
-      "sortId": 30002,
+      "sortId": 50002,
       "usage": "A large dose of emergency supplement that will swiftly clear your mind. Possible side effect: migraine.",
       "obtainApproach": "Weekly Quest reward, Gift",
       "classifyType": "CONSUME",
@@ -5052,6 +5618,361 @@
       "sortId": -10000,
       "usage": "Recyclable entry identification bracelet for the Obsidian Festival. Can be used to redeem rewards.",
       "obtainApproach": "Limited-time Event Missions, Daily Event Missions",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "et_ObsidianPass": {
+      "itemId": "et_ObsidianPass",
+      "name": "Obsidian Festival Ticket",
+      "description": "A through ticket system has been implemented across the various venues at this Obsidian Festival, which means tickets are required for most events. So please make good use of the tickets you have!",
+      "rarity": 4,
+      "iconId": "et_ObsidianPass",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "A ticket to the Obsidian Festival. Can be used to enter special stages.",
+      "obtainApproach": null,
+      "classifyType": "NONE",
+      "itemType": "ET_STAGE",
+      "stageDropList": [
+        {
+          "stageId": "a003_01",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_02",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_03",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_05",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_06",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_08",
+          "occPer": "ALWAYS"
+        }
+      ],
+      "buildingProductList": []
+    },
+    "token_Obsidian": {
+      "itemId": "token_Obsidian",
+      "name": "Siesta Obsidian",
+      "description": "Just collect them regardless of what they can do. Surely the marketing department will find some use for them.",
+      "rarity": 3,
+      "iconId": "token_Obsidian",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "Obsidian crystal mined from Siesta. Can be used to redeem rewards.",
+      "obtainApproach": null,
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [
+        {
+          "stageId": "a003_01",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_02",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_03",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_04",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_06",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_07",
+          "occPer": "ALWAYS"
+        }
+      ],
+      "buildingProductList": []
+    },
+    "token_ObsidianCoin": {
+      "itemId": "token_ObsidianCoin",
+      "name": "Obsidian Festival Token",
+      "description": "The demand from Obsidian Festival participants is so exceedingly high that they have yet to be met even after repeated reward restocking. Unfortunately, stopping the raffle at this time would mean triggering a riot, so the hosts have to keep the raffle going.",
+      "rarity": 3,
+      "iconId": "token_ObsidianCoin",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "Official token for the Obsidian Festival raffle event. Can be used to draw rewards.",
+      "obtainApproach": null,
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [
+        {
+          "stageId": "a003_f01",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_f02",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_f03",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "a003_f04",
+          "occPer": "ALWAYS"
+        }
+      ],
+      "buildingProductList": []
+    },
+    "clue_Heavymetal_1": {
+      "itemId": "clue_Heavymetal_1",
+      "name": "Heavy Metal Trend 1",
+      "description": "It's all about the heavy metal bands at the Obsidian Festival.",
+      "rarity": 3,
+      "iconId": "clue_Heavymetal_1",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "Chat messages on the local tourist terminal.",
+      "obtainApproach": "Alive Until Sunset Capsule Pool",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_Heavymetal_2": {
+      "itemId": "clue_Heavymetal_2",
+      "name": "Heavy Metal Trend 2",
+      "description": "They said an expensive enough guitar would go un-smashed.",
+      "rarity": 3,
+      "iconId": "clue_Heavymetal_2",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "Chat messages on the local tourist terminal.",
+      "obtainApproach": "Alive Until Sunset Capsule Pool",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_Heavymetal_3": {
+      "itemId": "clue_Heavymetal_3",
+      "name": "Heavy Metal Trend 3",
+      "description": "In fact, most people are just coming along for the ride, and going too fast only makes them panic.",
+      "rarity": 3,
+      "iconId": "clue_Heavymetal_3",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "Chat messages on the local tourist terminal.",
+      "obtainApproach": "Alive Until Sunset Capsule Pool",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_Heavymetal_4": {
+      "itemId": "clue_Heavymetal_4",
+      "name": "Heavy Metal Trend 4",
+      "description": "Envy is a very common motif. And the word is short.",
+      "rarity": 3,
+      "iconId": "clue_Heavymetal_4",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "Chat messages on the local tourist terminal.",
+      "obtainApproach": "Alive Until Sunset Capsule Pool",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_Heavymetal_5": {
+      "itemId": "clue_Heavymetal_5",
+      "name": "Heavy Metal Trend 5",
+      "description": "Costuming really has nothing to do with the speed of the performance.",
+      "rarity": 3,
+      "iconId": "clue_Heavymetal_5",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "Chat messages on the local tourist terminal.",
+      "obtainApproach": "Alive Until Sunset Capsule Pool",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_EDM_1": {
+      "itemId": "clue_EDM_1",
+      "name": "EDM Trend 1",
+      "description": "Seems to be comments from some electronic music fans.",
+      "rarity": 3,
+      "iconId": "clue_EDM_1",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "Chat messages on the local tourist terminal.",
+      "obtainApproach": "DDD Capsule Pool",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_EDM_2": {
+      "itemId": "clue_EDM_2",
+      "name": "EDM Trend 2",
+      "description": "Remember to stay hydrated on the dance floor.",
+      "rarity": 3,
+      "iconId": "clue_EDM_2",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "Chat messages on the local tourist terminal.",
+      "obtainApproach": "DDD Capsule Pool",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_EDM_3": {
+      "itemId": "clue_EDM_3",
+      "name": "EDM Trend 3",
+      "description": "Electronic music fans are a breed of their own.",
+      "rarity": 3,
+      "iconId": "clue_EDM_3",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "Chat messages on the local tourist terminal.",
+      "obtainApproach": "DDD Capsule Pool",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_EDM_4": {
+      "itemId": "clue_EDM_4",
+      "name": "EDM Trend 4",
+      "description": "DJs start composing their own songs when they are unsatisfied with the existing ones.",
+      "rarity": 3,
+      "iconId": "clue_EDM_4",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "Chat messages on the local tourist terminal.",
+      "obtainApproach": "DDD Capsule Pool",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_EDM_5": {
+      "itemId": "clue_EDM_5",
+      "name": "EDM Trend 5",
+      "description": "Even DJs struggle to get visas to certain countries. Or rather they're even less likely to get approved.",
+      "rarity": 3,
+      "iconId": "clue_EDM_5",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "Chat messages on the local tourist terminal.",
+      "obtainApproach": "DDD Capsule Pool",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_Rap_1": {
+      "itemId": "clue_Rap_1",
+      "name": "Rap Trend 1",
+      "description": "Yo, bro, what's up? Too hard to rhyme?",
+      "rarity": 3,
+      "iconId": "clue_Rap_1",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "Chat messages on the local tourist terminal.",
+      "obtainApproach": "Emperor Capsule Pool",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_Rap_2": {
+      "itemId": "clue_Rap_2",
+      "name": "Rap Trend 2",
+      "description": "Don't take your eyes off a man with a gun. Rapping angels are a lot of fun.",
+      "rarity": 3,
+      "iconId": "clue_Rap_2",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "Chat messages on the local tourist terminal.",
+      "obtainApproach": "Emperor Capsule Pool",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_Rap_3": {
+      "itemId": "clue_Rap_3",
+      "name": "Rap Trend 3",
+      "description": "Fight your battles with words, not with blades. Criminal activity won’t be tolerated in Siesta.",
+      "rarity": 3,
+      "iconId": "clue_Rap_3",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "Chat messages on the local tourist terminal.",
+      "obtainApproach": "Emperor Capsule Pool",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_Rap_4": {
+      "itemId": "clue_Rap_4",
+      "name": "Rap Trend 4",
+      "description": "A bunch of people always get arrested at the Obsidian Festival and end up permanently denied entry. Too bad for them.",
+      "rarity": 3,
+      "iconId": "clue_Rap_4",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "Chat messages on the local tourist terminal.",
+      "obtainApproach": "Emperor Capsule Pool",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "clue_Rap_5": {
+      "itemId": "clue_Rap_5",
+      "name": "Rap Trend 5",
+      "description": "Do you know how many rappers are there in Columbia?",
+      "rarity": 3,
+      "iconId": "clue_Rap_5",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "Chat messages on the local tourist terminal.",
+      "obtainApproach": "Emperor Capsule Pool",
       "classifyType": "NONE",
       "itemType": "ACTIVITY_ITEM",
       "stageDropList": [],
@@ -5094,6 +6015,103 @@
       ],
       "buildingProductList": []
     },
+    "act5d0_point_medal": {
+      "itemId": "act5d0_point_medal",
+      "name": "Top Tier Penguin Medal",
+      "description": "A luxurious, but completely meaningless, golden medal created by the most esteemed goldsmiths in Lungmen. You'll be hard pressed to find anything more limited than this in all of Terra. It's clearly a cup, but still called a medal, and it symbolizes the highest praise of the Emperor. Each sip is worth a thousand bucks, but don't use it to make hot coffee!",
+      "rarity": 4,
+      "iconId": "act5d0_point_medal",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "Collecting medals issued by Emperor himself? Probably a good idea.",
+      "obtainApproach": "Obtained through Rating Board missions",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "act5d1_point_conbounty": {
+      "itemId": "act5d1_point_conbounty",
+      "name": "Contract Bounty",
+      "description": "The ruthless but effective bounty mechanism is the only way to ensure the normal operations of the Contingency Crisis system.",
+      "rarity": 4,
+      "iconId": "act5d1_point_conbounty",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "Rewards earned after completing a contract. Can be used to redeem supplies.",
+      "obtainApproach": "Contingency Contract reward",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "act5d1_point_opagrt": {
+      "itemId": "act5d1_point_opagrt",
+      "name": "Operation Agreement",
+      "description": "The elimination of chaos does not necessarily ensure the establishment of order. \"Natural disasters turn into man-made disasters,\" but the Contingency Contract system at least provides you with a solution.",
+      "rarity": 4,
+      "iconId": "act5d1_point_opagrt",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "A symbol of cooperation. Can be used to unlock additional content in Contingency Contract.",
+      "obtainApproach": "Contingency Contract reward",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "act6d5_point_firecracker": {
+      "itemId": "act6d5_point_firecracker",
+      "name": "Quantum Firecracker",
+      "description": "A traditional explosive device that derives its meaning from its purpose. If an explosive goes off in a forest and no one is around to hear it, did an explosive really go off at all?",
+      "rarity": 4,
+      "iconId": "act6d5_point_firecracker",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "The wonderful paraphernalia collected during the festival can be exchanged for great rewards.",
+      "obtainApproach": "Limited Event Drop",
+      "classifyType": "NONE",
+      "itemType": "ACTIVITY_ITEM",
+      "stageDropList": [
+        {
+          "stageId": "act6d5_01",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act6d5_02",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act6d5_03",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act6d5_04",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act6d5_05",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act6d5_06",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act6d5_07",
+          "occPer": "ALWAYS"
+        },
+        {
+          "stageId": "act6d5_08",
+          "occPer": "ALWAYS"
+        }
+      ],
+      "buildingProductList": []
+    },
     "voucher_item_4pick1": {
       "itemId": "voucher_item_4pick1",
       "name": "Operator Exchange Voucher",
@@ -5102,11 +6120,155 @@
       "iconId": "voucher_item_4pick1",
       "overrideBkg": null,
       "stackIconId": null,
-      "sortId": 30001,
+      "sortId": 30004,
       "usage": "Used to exchange for an Operator.",
       "obtainApproach": "Gift",
       "classifyType": "CONSUME",
       "itemType": "VOUCHER_PICK",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "voucher_recruitR3_1": {
+      "itemId": "voucher_recruitR3_1",
+      "name": "★3 Recruitment Exchange Voucher I",
+      "description": "Allows you to select one of the 3-star Operators available during the first Recruitment period.",
+      "rarity": 2,
+      "iconId": "voucher_recruitR3_1",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 30003,
+      "usage": "Used to exchange for an Operator.",
+      "obtainApproach": "Store",
+      "classifyType": "CONSUME",
+      "itemType": "VOUCHER_PICK",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "voucher_recruitR4_1": {
+      "itemId": "voucher_recruitR4_1",
+      "name": "★4 Recruitment Exchange Voucher I",
+      "description": "Allows you to select one of the 4-star Operators available during the first Recruitment period.",
+      "rarity": 3,
+      "iconId": "voucher_recruitR4_1",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 30002,
+      "usage": "Used to exchange for an Operator.",
+      "obtainApproach": "Store",
+      "classifyType": "CONSUME",
+      "itemType": "VOUCHER_PICK",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "2020recruitment10_1": {
+      "itemId": "2020recruitment10_1",
+      "name": "Type-α Headhunting Permit",
+      "description": "Due to various strategic considerations, Rhodes Island conducted targeted headhunting in addition to batch recruitment in order to seek assistance from individuals with special talents.",
+      "rarity": 4,
+      "iconId": "2020recruitment10_1",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 30001,
+      "usage": "A special permit issued by the Rhodes Island HR Department with specific instructions for the headhunting agency. Can be used to headhunt for 10 Operators.",
+      "obtainApproach": "Store",
+      "classifyType": "CONSUME",
+      "itemType": "VOUCHER_CGACHA",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "2020recruitment10_2": {
+      "itemId": "2020recruitment10_2",
+      "name": "Type-β Headhunting Permit",
+      "description": "Due to various strategic considerations, Rhodes Island conducted targeted headhunting in addition to batch recruitment in order to seek assistance from individuals with special talents.",
+      "rarity": 4,
+      "iconId": "2020recruitment10_2",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 30001,
+      "usage": "A special permit issued by the Rhodes Island HR Department with specific instructions for the headhunting agency. Can be used to headhunt for 10 Operators.",
+      "obtainApproach": "Store",
+      "classifyType": "CONSUME",
+      "itemType": "VOUCHER_CGACHA",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "2020recruitment10_3": {
+      "itemId": "2020recruitment10_3",
+      "name": "Type-γ Headhunting Permit",
+      "description": "Due to various strategic considerations, Rhodes Island conducted targeted headhunting in addition to batch recruitment in order to seek assistance from individuals with special talents.",
+      "rarity": 4,
+      "iconId": "2020recruitment10_3",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 30001,
+      "usage": "A special permit issued by the Rhodes Island HR Department with specific instructions for the headhunting agency. Can be used to headhunt for 10 Operators.",
+      "obtainApproach": "Store",
+      "classifyType": "CONSUME",
+      "itemType": "VOUCHER_CGACHA",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "randomMaterial_1": {
+      "itemId": "randomMaterial_1",
+      "name": "Rhodes Island Supplies",
+      "description": "Rhodes Island purchases and stores boxes of supplies from various places. However, due to the lack of an organized storage system, each box contains seemingly random materials.",
+      "rarity": 4,
+      "iconId": "randomMaterial_1",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 30005,
+      "usage": "Filled with an assortment of supplies and materials.",
+      "obtainApproach": "Obtained through event stage limited-time drop or event",
+      "classifyType": "CONSUME",
+      "itemType": "VOUCHER_MGACHA",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "randomDiamondShd_1": {
+      "itemId": "randomDiamondShd_1",
+      "name": "Half Year Anniversary Red Envelope",
+      "description": "Nobody knows who ended up footing the bill. What we do know is the hope they have for Rhodes Island.",
+      "rarity": 4,
+      "iconId": "randomDiamondShd_1",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 30006,
+      "usage": "Red envelopes passed out to every member of Rhodes Island. The goods inside may be random, but they are always filled to the brim with blessings.",
+      "obtainApproach": "Gift",
+      "classifyType": "CONSUME",
+      "itemType": "VOUCHER_MGACHA",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "CRISIS_SHOP_COIN": {
+      "itemId": "CRISIS_SHOP_COIN",
+      "name": "Contract Bounty",
+      "description": "The ruthless but effective bounty mechanism is the only way to ensure the normal operations of the Contingency Crisis system.",
+      "rarity": 4,
+      "iconId": "CRISIS_SHOP_COIN",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": 10004,
+      "usage": "Rewards earned after completing a contract. Can be used to redeem supplies.",
+      "obtainApproach": "Contingency Contract reward",
+      "classifyType": "NORMAL",
+      "itemType": "CRS_SHOP_COIN",
+      "stageDropList": [],
+      "buildingProductList": []
+    },
+    "CRISIS_RUNE_COIN": {
+      "itemId": "CRISIS_RUNE_COIN",
+      "name": "Operation Agreement",
+      "description": "The elimination of chaos does not necessarily ensure the establishment of order. \"Natural disasters turn into man-made disasters,\" but the Contingency Contract system at least provides you with a solution.",
+      "rarity": 4,
+      "iconId": "CRISIS_RUNE_COIN",
+      "overrideBkg": null,
+      "stackIconId": null,
+      "sortId": -10000,
+      "usage": "A symbol of cooperation. Can be used to unlock additional content in Contingency Contract.",
+      "obtainApproach": "Contingency Contract reward",
+      "classifyType": "NONE",
+      "itemType": "CRS_RUNE_COIN",
       "stageDropList": [],
       "buildingProductList": []
     }
@@ -5200,6 +6362,11 @@
     "ap_supply_lt_100": {
       "id": "ap_supply_lt_100",
       "ap": 100,
+      "hasTs": true
+    },
+    "ap_supply_lt_010": {
+      "id": "ap_supply_lt_010",
+      "ap": 10,
       "hasTs": true
     }
   }

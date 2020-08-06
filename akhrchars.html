@@ -6,7 +6,7 @@
     <meta name='theme-color' content='#222222ff'>
     <title translate-id='web-title'>Arknights Operator Details</title>
     <link rel='manifest' href='./manifest.json' crossorigin='use-credentials'>
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css'>
     <link rel='stylesheet' href='css/ak.css'>
     <link rel='stylesheet' href='css/akMaterial.css'>
     <link rel='stylesheet' href='css/akchardetail.css'>
@@ -14,7 +14,7 @@
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
     <script src='https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
-    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js'></script>
     <script src="js/spine-widget.js"></script>
     <script src="js/spine-skeleton-binary.js"></script>
     <!-- site tag (gtag.js) - Google Analytics -->
@@ -26,13 +26,29 @@
         gtag('config', 'UA-159317757-1');
         
     </script>
-    <script>
-            $(function(){
-              $('#nav-placeholder').load('nav.html');
-            });
-     </script>
 </head>
 <body  >
+    <div id="loadingOverlay" style="width: 100vw; height: 150%; background-color: #111111; position: absolute; z-index: 9999; top:0px;">
+        <div class="d-flex justify-content-center" style="margin-top: 50vh">
+            <div class="spinner-border" role="status" style="border-color: #0098DC; border-right-color: transparent; width: 4rem; height: 4rem;">
+            </div>
+        </div>
+        <div style="width: 100%; text-align: center; margin-top: 13px;">
+            <div class='loadtext'>Loading Toolbox</div>
+            <div></div>
+            <div class="loadforce" onclick="hideload()"><a>Click here if stuck on loading</a></div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+          $('#nav-placeholder').load('nav.html');
+        });
+        $(window).on("load", function () {
+            setTimeout(function () {
+                $("#loadingOverlay").fadeOut(); 
+            }, 1000);
+        });
+    </script>
     <!-- style=' background-image: url(./img/extra/bg1.png)' -->
     <button class='btn btn-sm btn-primary goToTag' style='position:fixed;bottom:15px ;right: 0px;size:70px 70px;padding: 10px;z-index: 10000' id='to-tag' type='button'>^ </button>
     <nav id="aknav" class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" style="background-image: linear-gradient(#222222ff 70%,#222222ff , #111111aa );">
@@ -43,6 +59,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
     </nav>
+    <div id='acedonate'></div>
     <div style='padding-bottom:40px;'></div>
     <!-- <div class='warning-sign'style='position: absolute;z-index: 999999;background:#aaa;top:100px;left:50%;width:500px;height:200px;margin-left:-250px;text-align:center; vertical-align:center'>aaaaaaaaaaaaaaaaaaaaa</div> -->
     <div id='opchoosemodal' class='modal fade' role='dialog'>
@@ -473,11 +490,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="topright">
-                                                <div style="padding: 15px;">
+                                            <div class="topright" style="margin-right: 10px;">
+                                                <div style="text-align: center;">
                                                     
-                                                    <img id="op-classImage" class="ak-shadow" src="" style="width: 100%;">
-                                                    <div id="op-className"  class="ak-shadow" style="color:#ddd;text-align:center;margin:-4px;margin-top:0px;background:#222;padding:2px;font-size:12px;border-radius:2px"></div>
+                                                    <img id="op-classImage" class="ak-shadow" src="" style="width: 70%;">
+                                                    <div id="op-className"  class="ak-shadow" style="color:#ddd;text-align:center;margin:-4px;margin-top:0px;background:#222;padding:2px;font-size:0.9em;font-weight:600;border-radius:2px"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -593,8 +610,8 @@
     <div class="row" >
         <div class="col-12 ak-footer chara-footer-1" style="margin-top: 100px;">
             <div class="col-12 text-center" style="height: 50px">
-                <div style="vertical-align: middle;line-height: 30px;">Made by : Aceship and Faryzal2020</div>
-                <div style="vertical-align: middle;line-height: 20px;">With translate and data help from: dragonjet, Jetroyz and other on <a href="https://discord.gg/vJvAP8X" target="_blank">Rhodes island HQ discord server</a></div>
+                <div style="vertical-align: middle;line-height: 30px;">Developed and Maintained by: Aceship and Faryzal2020</div>
+                <div style="vertical-align: middle;line-height: 20px;">With translate and data help from: dragonjet, Jetroyz, AEsir and others on <a href="https://discord.gg/vJvAP8X" target="_blank">Rhodes island HQ discord server</a></div>
             </div>
         </div>
     </div>

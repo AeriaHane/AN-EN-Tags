@@ -3,12 +3,14 @@ local list =
 {
   --list all defined fixer path at here
   "HotFixes/ShopHotfixer",
-  "HotFixes/ShopFurnHotfixer",
-  "HotFixes/Act4d0Hotfixer",
-  "HotFixes/InventoryHotfixer",
-  "HotFixes/YostarSDKFixer",
-  "HotFixes/CheckinHotfixer",
-  "HotFixes/FurnShopHotfixer"
+  "HotFixes/BattleFinishHotfixer",
+  "HotFixes/CrisisBattleFinishHotfixer",
+  "HotFixes/FurnShopHotfixer",
+  "HotFixes/HomeHotfixer",
+  "HotFixes/RecruitUpDetailObjHotfixer",
+  "HotFixes/RecruitUpCharDetailPortraitObjHotfixer",
+  "HotFixes/ItemRepoVoucherGachaStateHotfixer",
+  "HotFixes/RecruitAvailDetailObjHotfixer"
 };
 
 return list;
